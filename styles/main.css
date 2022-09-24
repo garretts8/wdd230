@@ -23,11 +23,13 @@ header {
 .my-image {
   display: grid;
   grid-template-columns: 180px 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-items: left;
 }
 
 header img {
+  display: grid;
   width: 120px;
   margin: 15px 30px;
   border-radius: 10px;
