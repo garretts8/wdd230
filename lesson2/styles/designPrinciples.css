@@ -1,0 +1,71 @@
+/* creates black background color */
+body {
+  background-color:black;
+  margin: 20px;
+}
+
+header, footer {
+  background-color: rgb(44, 41, 41);
+  margin: 1.25rem auto;
+  color: white;
+  font-family: 'Noto Serif', serif;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row {
+  display: grid;
+  grid-gap: 10px;
+}
+
+div {
+  border: 3px solid #3a3a3a;
+  padding: 10px 25px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  color:aqua;
+  font-size: 1.5em;
+  font-family: 'Noto Serif', serif;
+}
+
+h4 {
+  color: white;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .audible {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .audible {
+    grid-column: auto;
+  }
+}
