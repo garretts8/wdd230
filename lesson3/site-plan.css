@@ -1,0 +1,108 @@
+body {
+  background-color: #F2EFEA;
+  max-width: 900px;
+  margin: 20px;
+}
+
+header{
+  text-align: center;
+}
+header, footer {
+  
+  font-family: 'Noto Serif', serif;
+  background-color: #0A1128;
+  color: white;
+  padding: 10px 40px;
+}
+
+i{
+  padding: 0.5em;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+}
+
+.social{
+  margin-left: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Serif', serif;
+}
+
+p{
+  font-family: 'Noto Serif', serif;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  flex: 1 1 100%;
+}
+
+nav {
+  background-color: #0A1128;
+}
+
+nav a {
+  color: white;
+}
+
+tr{
+  width: 25%;  
+}
+
+td {
+  width: 25%;
+}
+.primary{
+  background-color: #3066BE;
+  border: white;
+  border-style: solid;
+}
+
+.secondary{
+  background-color: #F2EFEA;
+  border: white;
+  border-style: solid;
+}
+
+.accent1{
+  background-color: #FC7753;
+  border: white;
+  border-style: solid;
+}
+
+.accent2{
+  background-color: #0A1128;
+  border: white;
+  border-style: solid;
+}
+
+@media screen and (min-width: 600px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .audible {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .audible {
+    grid-column: auto;
+  }
+}
