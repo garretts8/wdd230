@@ -1,0 +1,59 @@
+const monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+
+const monthNumbers = [
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12"
+];
+
+const dayNames = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+
+
+const todaysDate = new Date();
+//const time = todaysDate.toLocaleTimeString(); // Use if AM/PM desired on time
+const dayName = dayNames[todaysDate.getDay()];
+// console.log(dayName)
+const dateName = todaysDate.getDate();
+const monthName = monthNames[todaysDate.getMonth()];
+const monthNumber = monthNumbers[todaysDate.getMonth()];
+const year = todaysDate.getFullYear();
+const timeHour = todaysDate.getHours(); 
+const timeMinute = todaysDate.getMinutes();
+const timeSecond = todaysDate.getSeconds();
+const currentDate = `${dayName}, ${dateName} ${monthName} ${year}`;
+const modifiedDate = `${monthNumber}/${dateName}/${year} ${timeHour.toString().padStart(2, '0')}:${timeMinute.toString().padStart(2, '0')}:${timeSecond.toString().padStart(2, '0')} `;
+// //const currentDate = `${monthName}/${dayName}/${todaysDate.getFullYear()} ${time} `; // Used to print AM/PM formated time
+ 
+document.getElementById('currentdate').textContent = currentDate;
+document.getElementById('modifieddate').textContent = modifiedDate;
+document.getElementById('year').textContent = year;
