@@ -70,7 +70,6 @@ nav ul{
   
 nav ul.open{
   display: block;
-  /* padding: .2rem 2vw; */
 }
 
 nav ul li a {
@@ -82,7 +81,7 @@ nav ul li a {
   font-size: 1rem;
 }
 nav ul li a:hover {
-  background-color: #2B49AB;
+  background-color: #869FC7;
 }
 
 strong {
@@ -106,8 +105,10 @@ strong {
   grid-row: 2;
   text-align: center;
   border: 2px solid rgba(55,93,219);
-  background-color: #2B49AB;
+  background-color: #869FC7;
   padding: 10px;
+  color: black;
+  font-weight: bolder;
 }
 
 main {
@@ -121,7 +122,7 @@ main {
 .event {
   grid-column: 1/5;
   grid-row: 2/3;
-  border: 2px solid #3066BE;
+  border: 2px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
@@ -130,7 +131,7 @@ main {
   grid-column: 1/5;
   grid-row: 1/2;
   /* margin: 10px; */
-  border: 2px solid #3066BE;
+  border: 2px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
@@ -139,13 +140,13 @@ main {
   display: block;
   grid-column: 1/5;
   grid-row: 5/6;
-  border: 2px solid #3066BE;
+  border: 2px solid rgba(55,93,219);
 }
 
 .spotlight1 {
   flex: auto;
   margin: 10px 10px 0px 10px;
-  border: 1px solid #3066BE;
+  border: 1px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
@@ -153,7 +154,7 @@ main {
 .weather {
   grid-column: 1/5;
   grid-row: 3/4;
-  border: 2px solid #3066BE;
+  border: 2px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
@@ -161,14 +162,14 @@ main {
 .spotlight2 {
   flex: auto;
   margin: 0px 10px 10px 10px;
-  border: 1px solid #3066BE;
+  border: 1px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
 
 .join {
   display: none;
-  border: 2px solid #3066BE;
+  border: 2px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
@@ -176,14 +177,14 @@ main {
 .release {
   grid-column: 1/5;
   grid-row: 4/5;
-  border: 2px solid #3066BE;
+  border: 2px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
 
 .spotlight3 {
   display: none;
-  border: 1px solid #3066BE;
+  border: 1px solid rgba(55,93,219);
   padding: 0px 0px 150px 0px;
   text-align: center;
 }
@@ -192,8 +193,8 @@ footer {
   display: block;
   background-color: #0A1128;
   color:white; 
-  /* padding: 10px 0px;
-  margin-top: 10px; */
+  /* padding: 10px 0px; 
+  margin-top: 10px; */ */
 } 
 
 .footerImg {
@@ -221,7 +222,7 @@ footer {
   grid-row: 2/3;
   text-align: center;
   border-top: 2px solid rgba(55,93,219);
-  padding-top: 8px;
+  padding: 10px;
   font-size: .8rem;
 }
 

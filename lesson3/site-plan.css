@@ -1,108 +1,380 @@
 body {
-  background-color: #F2EFEA;
-  max-width: 900px;
-  margin: 20px;
+  margin: auto;
+  width: 1000px;
 }
 
-header{
-  text-align: center;
-}
-header, footer {
-  
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Serif', serif;
+  margin: 0px;
+}
+
+p {
+  font-family: 'Noto Serif', serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   background-color: #0A1128;
   color: white;
-  padding: 10px 40px;
+  margin: 10px;
+  padding: 15px;
 }
 
-i{
-  padding: 0.5em;
+.headercontainer {
+  margin: auto;
+  text-align: center;
 }
 
-footer{
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr;
+.title {
+  padding: 15px;
 }
 
-.social{
-  margin-left: 50%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Noto Serif', serif;
-}
-
-p{
-  font-family: 'Noto Serif', serif;
+nav {
+    background-color: #0A1128;
+    display: grid;
 }
 
 nav ul {
   display: flex;
+  list-style-type: none;
+  align-items: center;
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 nav li {
   flex: 1 1 100%;
+  padding: 20px;
+}
+ 
+.sitenav {
+  margin: 30px;
+  vertical-align: middle; 
+  padding: 10px;
+  vertical-align: middle;
+  margin: 10px;
 }
 
-nav {
+.main1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 250px 200px 1fr 1fr 1fr;
+  width: 95%;
+  margin: auto;
+  gap: 10px;
+}
+
+.main2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 1fr 250px;
+  width: 95%;
+  margin: auto;
+  gap: 10px;
+}
+
+.main3 {
+  display: grid;
+  width: 95%;
+  margin: auto;
+  background-color: #EDEBD7;
+  padding: 10px;
+  gap: 10px;
+}
+
+.main4{
+  display: grid;
+  width: 95%;
+  margin: auto;
+  background-color: #EDEBD7;
+  padding: 10px;
+  gap: 10px;
+}
+
+.overview {
+  justify-content: center;
+  
+}
+
+.siteName {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 10px;
+  background-color: #869FC7;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.sitename {
+  text-align: center;
+  border: 2px solid rgba(55,93,219);
   background-color: #0A1128;
+  border: 2px solid #4089FF;
+  background-color: #0A1128;
+  color:white;
 }
 
-nav a {
+.name {
+  text-align: center;
+  padding: 20px;
+}
+
+.audiencecontainer {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 10px;
+  background-color: #869FC7;
+  padding: 10px;
+}
+
+.audiencetitle{
+  text-align: center;
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  border: 2px solid #4089FF;
+  background-color: #0A1128;
+  color:white;
+}
+
+.audiencepara{
+  text-align: center;
+  padding: 20px;
+
+}
+
+.purposeContainer {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #EDEBD7;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.purposetitle {
+  border: 2px solid #4089FF;
+  background-color: #0A1128;
   color: white;
+  text-align: center;
 }
 
-tr{
-  width: 25%;  
+.purposepara {
+  font-size: 18px;;
+  }
+
+.personascontainer {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #EDEBD7;
+  margin-top: 10px;
+  padding: 20px;
+  }
+
+.personastitle {
+  border: 2px solid #4089FF;
+  background-color: #0A1128;
+  color: white;
+  text-align: center;
 }
 
-td {
-  width: 25%;
+.personasname, .positionheld {
+  text-align: center;
 }
+
+.styletitle {
+  border: 2px solid #4089FF;
+  background-color: #0A1128;
+  color: white;
+  text-align: center;
+}
+
+.domaincontainer {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #98E9DC;
+  margin-top: 10px;
+  padding: 10px;
+  }
+
+.domainname {
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.domainlink {
+  text-align: center;
+  padding: 10px;
+}
+
+.scenarioscontainer{
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #98E9DC;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.scenariostitle{
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+  
+.logocontainer{
+  background-color: #EDEBD7;
+  margin-top: 10px;
+  padding: 10px;
+  }
+
+.logotitle {
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+img {
+  width: 10%;
+  display: block;
+  justify-content: center;
+  padding:5px;
+  margin-top: 10px;
+  margin-left: 45%;
+}
+
+.navigationcontainer{
+  grid-column: 1;
+  grid-row: 6;
+  background-color: #869FC7;
+  margin-top: 10px;
+}
+
+.navigationtitle {
+  border: 2px solid #4089FF;
+  background-color: #0A1128;
+  color: white;
+  text-align: center;
+  margin: 15px;
+}
+
+nav ul li a:hover {
+  background-color: #869FC7;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+}
+
+.homenav ul li {
+  flex: 1 1 100%;
+}
+
+.social {
+  grid-column: 1;
+    grid-row: 5;
+    background-color: #869FC7;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.socialTitle {
+  text-align: center;
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+.socialicons {
+  text-align: center;
+  padding: 10px;
+}
+
+i {
+  padding: 15px;
+}
+
+footer{
+  display: block;
+  text-align: center;
+  background-color: #0A1128;
+  color: white;
+  margin: 10px;
+  padding: 10px
+}
+  
 .primary{
   background-color:#0A1128;
   border: white;
   border-style: solid;
 }
 
+.primary{
+  background-color:#0A1128;
+  border: white;
+  border-style: solid;
+  color: white;
+}
+
 .secondary{
-  background-color: #F2EFEA;
+  background-color: #869FC7;
   border: white;
   border-style: solid;
 }
 
 .accent1{
-  background-color: #FC7753;
+  background-color: #98E9DC;
   border: white;
   border-style: solid;
 }
 
 .accent2{
-  background-color:#3066BE ;
+  background-color: #EDEBD7 ;
   border: white;
   border-style: solid;
 }
 
-@media screen and (min-width: 600px) {
-  .row {
-    grid-template-columns: 1fr 1fr;
-  }
-  .audible {
-    grid-column: span 2;
-  }
+table, th, td {
+  border: 1px solid;
+  padding: 15px;
+  margin: 10px;
+  background-color: #869FC7;
 }
 
-@media screen and (min-width: 900px) {
-  .row {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .audible {
-    grid-column: auto;
-  }
+.typographytitle{
+  text-align: center;
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color:white;
 }
+
+.examples {
+  text-align: center;
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color:white;
+}
+
+#fontexamples {
+  background-color: #869FC7;
+}
+
+
+
+
+  
+  
+
+
+
