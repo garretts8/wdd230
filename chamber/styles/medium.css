@@ -2,8 +2,16 @@
   /* nav {
     align-items: flex-end;
   } */
-
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
   main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 350px 400px 200px 400px;
     margin: 0px;
   }
 
@@ -28,7 +36,7 @@
     grid-row: 1;
   }
 
-  nav ul.open{
+  nav ul.open {
     display: block;
   }
 
@@ -64,7 +72,8 @@
   .social {
     grid-column: 3/4;
     grid-row: 1;
-  }
+    margin-right: 40px;
+}
 
   .event {
     grid-column: 1/4;
@@ -76,40 +85,68 @@
     grid-row: 1;
   }
 
+  .herobtn {
+    position: absolute;
+    font-size: .8rem;
+    width: 150px;
+  }
+  
   .nested {
     display: flex;
     grid-column: 1/5;
     grid-row: 3;
     border: 2px solid #3066BE;
+    
   }
 
   .spotlight1 {
     flex: auto;
     margin: 10px;
+    grid-column: 1/2;
+    grid-row: 3;
+    padding: 20px;
+  }
+
+  .russonimg {
+    padding-top: 15px;
   }
 
   .spotlight2 {
     flex: auto;
     margin: 10px;
+    grid-column: 3/4;
+    grid-row: 3;
   }
 
   .weather {
     grid-column: 4/5;
     grid-row: 5;
+    margin: 5px 0px;
   }
 
   .join {
+    display: grid;
     grid-column: 1/5;
     grid-row: 4;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: #869FC7;
+    margin: 5px auto;
   }
 
   .release {
     grid-column: 1/5;
     grid-row: 2;
+    border: 2px solid #3066BE;
+    padding: 10px;
+  }
+
+  .releasetitle {
+    text-align: center;
   }
 
   .spotlight3 {
     display: none;
   }
-
 }

@@ -10,3 +10,6 @@ function toggleMenu() {
 // call the function toogleMenu
 const x = document.getElementById("button");
 x.onclick = toggleMenu;
+
+
+const banner = document.querySelector(".banner");

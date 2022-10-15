@@ -33,22 +33,76 @@
       </ul>
     </nav>
     <div class="social"> 
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
+      <i><a class="fa-brands fa-facebook-f" href="https://www.facebook.com/"></a></i>
+      <i><a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/"></a></i>
     </div>
     <div class="currentdate"><span id="currentdate"></span></div>
   </header>
-  <main>
-    <div class="event"><h3>Event</h3></div>
-    <div class="hero"><h3>Hero with site name and call to action</h3></div>
-    <div class="nested">
-      <div class="spotlight1"><h3>Spotlight 1</h3></div>
-      <div class="spotlight2"><h3>Spotlight 2</h3></div>
-      <div class="spotlight3"><h3>Spotlight 3</h3></div>
+    <div id="banner">
     </div>
-    <div class="weather"><h3>Weather</h3></div>
-    <div class="join"><h3>Join</h3></div>
-    <div class="release"><h3>News Release</h3></div>
+  <main>
+    <div class="event">
+      <h3>Upcoming Events</h3>
+      <img class="eventimg" src="images/Syracuse_event.jpg" alt="Pictures of pumpkins with a title Syracuse Vity Pumpkin Walk">
+      <div class="eventinfo">
+      <h3> OCTOBER 27-29, 2022</h3>
+      <p>7PM-10PM</p>
+      <p>FOUNDERS PARK</p>
+      <p><strong>FREE ADMISSION</strong></p></div>
+    </div>
+    <div class="hero">
+      <h3 class="herotitle">United We Stand!</h3>
+      <img class="heroimg" src="images/Syracuse_mountains.jpg" alt="Picture of mountains surrounding the City of Syracuse">
+      <button class="herobtn">Join The Chamber</button>
+    </div>
+    <div class="nested">
+
+      <div class="spotlight1">
+        <h2>Russon Mortuary & Crematory</h2>
+        <img class="russonimg" src="images/Russons.jpg" alt="Pictures of Russon logo">
+        <h3 class="spotlight1quote">Our Family serving your family for over 65 years</h3>
+        <p>1585 W. 300 S. Syracuse, UT 84075</p>
+        <p>(801) 825-3655</p>
+      </div>
+      <div class="spotlight2">
+        <h3>Valley Nursery</h3>
+        <img src="images/valleynursery.jpg" alt="logo of Valley Nursery Garden Center">
+        <h3 class="spotlight2quote"> Four Generations growing with Weber County</h3>
+        <p>6484 S. 2000 E. Syracuse, UT 84075</p>
+        (801) 479-6060
+      </div>
+      <div class="spotlight3">
+        <h3>Rejuvu Day Spa and Beauty Haven</h3>
+        <img class= "rejuvu" src="images/rejuvu.jpg" alt="Picture of the logo for Rejuvu Day and Beauty Spa">
+        <h3>Back to Self Care</h3>
+        <p>185 N. 2000 W. Syracuse, UT 84075</p>
+        <p>(801) 525-8348</p>
+      </div>
+    </div>
+    <div class="weather">
+      <h1>Syracuse</h1>
+      <h1>64&#176;F</h1>
+      <h3>Partly Cloudy &#x26C5;</h3>
+      <p>H: 72&#176; &#160;  L: 44&#176;</p>
+      <p>Precipitation: 1%</p>
+        <p>Humidity: 75%</p>
+        <p>Wind: 6 mph</p>
+    </div>
+    <div class="join">
+      <button class="joinbtn">Join us!</button>
+      <p class="joinpara">Come see how joining will benefite you, your business and the community!</p>
+    </div>
+    <div class="release">
+      <h3 class=" releasetitle">News Release</h3>
+      <div>
+        <img class="titansimg" src="images/titans.png" alt="Picture of the logo for the Syracuse Titans football team ">
+        <h3 class="news"><u>Syracuse High Retail Center</u></h3>
+        <p>Currently under construction, a new retail center is popping up by Syracuse High School
+            on 1863 West 700 South. This location will have three companies that has been tailored towards the students at Syracuse High School:
+          <strong>Quench It Soda</strong>, <strong>Scratch Burger</strong>, and <strong>The Crepery</strong>.
+        </p>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="footerImg"><img src="images/SyracuseLogo.jpg" alt="Logo for Syracuse Chamber of Commerce"></div>
@@ -69,6 +123,7 @@
   <script src="scripts/currentdate.js"></script>
   <script src="https://kit.fontawesome.com/c12ac5d956.js" crossorigin="anonymous"></script>
   <script src="scripts/menu_open.js"></script>
+  <script src="scripts/banner.js"></script>
 
 </body>
 </html>
