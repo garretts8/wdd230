@@ -15,7 +15,7 @@ const weekDayName = weekDayNames[todaysDate.getDay()];
 const bannerDiv = document.getElementById('banner');
 const bannerText = document.createElement('h2');
 bannerDiv.appendChild(bannerText);
-bannerText.textContent = "Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+bannerText.textContent = "🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
   
 function bannerDisplay(date) {
   if (date == "Monday" || date == "Tuesday") {
