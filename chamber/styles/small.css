@@ -96,26 +96,27 @@ strong {
 }
 
 .social {
-  grid-column: 3/4;
-  grid-row: 1;
-  color: white;margin-right: 10px;
+  display: flex;
+  color: white;
+  /* margin-right: 10px; */
 }
 
-.social i {
-  padding: 2px;
+.social a {
   margin-left: 20px;
   color: white;
   text-decoration: none;
+  align-content: center;
 }
 
-.social i a:hover {
-  background-color: #869FC7;
+.social a:hover {
   color: #0A1128;
-  padding: 12px;
+  background-color: #869FC7;
+  padding: 2px;
 }
 
-.social i a:visited {
+.social a:visited {
   color: white;
+  margin-left: 100px;
 }
 
 .currentdate {
