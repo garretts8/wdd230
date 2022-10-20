@@ -26,6 +26,11 @@
     grid-row: 1;
   }
 
+  nav ul.open {
+    display: flex;
+  }
+
+
   nav ul li a {
     border-top: none;
   }
