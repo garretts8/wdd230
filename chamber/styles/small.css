@@ -4,10 +4,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body{
-  max-width: 95%;
-  margin: 10%;
-  min-width: 350px;
+
+body {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
 }
 
 header {
@@ -18,22 +19,20 @@ header {
   padding: 10px;
   color: white;
   align-items: center;
-  min-width: 350px;
-}
-
-img {
-  width: 50%;
+  min-width: 320px;
 }
 
 .logo {
   grid-column: 1;
   grid-row: 1;
-  margin: 15px 30px;
+  margin-left: 2%;
+  width: 75%;
 }
 
-.commerseTitle {
+#commerceTitle {
   grid-column: 2/3;
   grid-row: 1;
+  padding-left: 50px;
 }
 
 h1 h2 h3 h4 {
@@ -98,6 +97,7 @@ strong {
 .social {
   display: flex;
   color: white;
+  width: 100%;
   /* margin-right: 10px; */
 }
 
@@ -133,8 +133,8 @@ strong {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 1fr 1fr;
-  margin: 15px 30px;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* margin: 15px 30px; */
   grid-gap: 5px 5px;
 }
 
@@ -172,14 +172,23 @@ main {
   margin: 5px;
 }
 
-.heroimg {
+.herofig {
+  margin: 0;
   width: 100%;
   height: 100%;
 }
 
+.heroimg {
+ width: 100%;
+ height: 100%;
+ /* margin-bottom: 10px;
+ overflow: hidden; */
+}
+
+
 .herotitle {
   position: absolute;
-  color: rgb(237, 232, 232, 1.5);
+  color: #0A1128;
   left: 20px;
   font-size: 2rem;
   filter: brightness(120%);
@@ -232,6 +241,24 @@ main {
   text-align: center;
   background-color: #EDEBD7;
   padding-top: 30px;
+}
+
+.speed{
+  display: flex;
+  margin-left: 15%;
+}
+
+.speed p {
+  margin-left: 2px;
+ }
+
+.wind {
+  display: flex;
+  margin-left: 15%
+}
+
+.wind p {
+  margin-left: 2px;
 }
 
 .spotlight2 {
@@ -350,3 +377,10 @@ footer {
 #button span:nth-child(2) {display: none;}
 #button.open span:nth-child(1) {display: none;}
 #button.open span:nth-child(2) {display: block;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
