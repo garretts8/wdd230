@@ -8,11 +8,17 @@
     grid-template-rows: 1fr;
   }
   
-  main {
+  .index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 300px 350px 400px 200px 400px;
     margin: 0px;
+  }
+
+  .discover {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .05fr .75fr 1fr 1fr 1fr;
   }
 
   h1 {
@@ -21,7 +27,7 @@
   }
   
   h2 {
-    font-size: .8rem;
+    font-size: 1.2rem;
     margin: 0px;
   }
   
@@ -46,6 +52,7 @@
     grid-template-rows: 1fr;
     margin: 10px 0px;
   }
+
 
   .footerImg {
     grid-column: 1/2;
@@ -164,6 +171,31 @@
 
   .spotlight3 {
     display: none;
+  }
+
+  .william {
+    display: none;
+  }
+
+  .historyContent {
+    margin-top: 5%;
+  }
+
+  .businessConstr {
+    display: none;
+  }
+
+  .bulldozer {
+    margin-left: 25%;
+    margin-right: 25%;
+    
+
+    
+  }
+
+  .scenic {
+    padding: 5px;
+    margin-left: 30%;
   }
   
 }

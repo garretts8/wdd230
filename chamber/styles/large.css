@@ -108,6 +108,61 @@
     border: none;
   }
 
+  .historyContainer {
+    background-color: #869FC7;
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 5px;
+    margin-top: 10px
   
+  }
+  
+  .william {
+    display: flex;
+    padding: 5px;
+  }
+
+  .historyContent {
+    padding: 5px;
+    text-align: center;
+    /* background-color: #98E9DC; */
+  }
+  
+  .saltMill {
+    padding: 5px;
+    margin-top: 4%;
+  } 
+  
+  .businessContainer {
+    grid-column: 1;
+    grid-row: 5;
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid #4089FF;
+  }
+
+  /* .businessContent {
+    text-align: center;
+   
+  } */
+
+  .businessImg {
+    display: flex;
+  }
+
+  .businessConstr {
+    display:inline;
+    flex: 1 1 auto;
+    margin: 0px
+    
+  }
+
+  .bulldozer {
+    margin: 0px;
+    
+  }
 
 }
+  
+

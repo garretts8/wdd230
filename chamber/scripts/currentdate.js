@@ -47,6 +47,7 @@ const dateName = todaysDate.getDate();
 const monthName = monthNames[todaysDate.getMonth()];
 const monthNumber = monthNumbers[todaysDate.getMonth()];
 const year = todaysDate.getFullYear();
+const day = todaysDate.getDay();
 const timeHour = todaysDate.getHours(); 
 const timeMinute = todaysDate.getMinutes();
 const timeSecond = todaysDate.getSeconds();

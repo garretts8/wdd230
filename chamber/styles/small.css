@@ -130,12 +130,17 @@ strong {
   font-weight: bolder;
 }
 
-main {
+.index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /* margin: 15px 30px; */
   grid-gap: 5px 5px;
+}
+
+.discover {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .05fr .75fr 1fr 1fr 1fr;
 }
 
 #banner {
@@ -338,6 +343,156 @@ main {
 
 .rejuvu {
   margin-left: 25%;
+}
+
+.discovertitle {
+  border: 2px solid #4089FF;
+  background-color: #0A1128;
+  color:white;
+  text-align: center;
+  padding:10px;
+  margin: 5px 0px;;
+  grid-column: 1;
+  grid-row: 1;
+  
+  
+}
+
+.historyContainer {
+  background-color: #869FC7;
+  display: flex;
+  grid-column: 1;
+  grid-row: 2;
+  padding: 5px;
+  margin-top: 10px
+
+}
+
+.william {
+  padding: 5px;
+}
+
+.historyContent {
+  padding: 5px;
+  text-align: center;
+  /* background-color: #98E9DC; */
+}
+
+.saltMill {
+  padding: 5px;
+  margin-top: 4%;
+}
+
+.populationContainer {
+  background-color: #EDEBD7;
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.populationinfo {
+  text-align: center;
+  padding: 10px;
+  background-color: #98E9DC;
+}
+
+.populationimg {
+  margin: auto;
+   
+}
+
+.locationContainer {
+  display:grid;
+  grid-column: 1;
+  grid-row: 4;
+  padding: 5px;
+  background-color: #869FC7;
+  margin-top: 10px;
+}
+
+.locationInfo {
+  text-align: center;
+  padding: 5px;
+  
+}
+
+.locationImg {
+  margin:auto;
+  padding: 5px
+}
+
+.businessContainer {
+  grid-column: 1;
+  grid-row: 5;
+  padding: 5px;
+  margin-top: 10px;
+  border: 2px solid #4089FF;
+}
+
+.businessContent {
+  text-align: center;
+  padding: 5px;
+}
+
+.businessImg {
+  padding: 5px;
+  margin-left: 5%
+  
+}
+
+.businessConstr {
+  margin-left: 10%;
+  padding: 5px;
+}
+
+.bulldozer {
+  padding: 5px;
+  margin-left: 10%;
+}
+
+
+
+.economicContainer {
+  grid-column:1;
+  grid-row: 6;
+  padding: 5px;
+  background-color: #98E9DC;
+  margin-top: 10px;
+}
+
+.economicInfo {
+  padding: 5px;
+  text-align: center;
+}
+
+.scenic {
+  padding: 5px;
+  margin-left: 25%;
+}
+
+.saltMill {
+  text-align: center;
+}
+.popIncrease{
+  text-align: center;
+}
+
+.googlemap {
+  text-align: center;
+}
+.jensen {
+  text-align: center;
+}
+
+[data-src] {
+  filter: blur(0.2em);
+}
+
+img{
+  filter: blur(0em);
+  transition:filter 0.5s;
 }
 
 footer {

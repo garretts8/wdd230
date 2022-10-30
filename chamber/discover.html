@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Page for the Syracuse Chamber of Commerce</title>
+  <meta name="description" content="Discover page for the Syracuse Chamber of Commerce website assignment for WDD 230: Web Frontend Development">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="clearfix">
+    <figure class="logo">
+      <img class = "logo" src="images/SyracuseLogo_75.webp" alt="Logo for Syracuse Chamber of Commerce"
+      srcset="images/SyracuseLogo_75.webp 1x, images/SyracuseLogo_150.webp 2x, 
+      images/SyracuseLogo_300.webp 3x">
+    </figure>
+    
+    <div id="commerceTitle">
+      <h1>Syracuse</h1>
+      <h2>Chamber of Commerce</h2>
+    </div>
+    <nav class="headerNav">
+      <!-- add hamburger menu button - &#9776 is the code for the symbol -->
+      <button id="button"><span>&#9776;</span><span>X</span></button>
+      <ul id="ulList">
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="social"> 
+      <a class="facebook" href="https://www.facebook.com/"><img src="images/facebook100.png" alt="Facebook icon"></a>
+      <a class="Linkedin" href="https://www.linkedin.com/"><img src="images/linkedin100.png" alt="Linedin icon"></a>
+      <!-- <i><a class="fa-brands fa-facebook-f" href="https://www.facebook.com/" alt="Facebook link"></a></i>
+      <i><a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/"alt="Linkin link"></a></i> -->
+    </div>
+    <div class="currentdate"><span id="currentdate"></span></div>
+  </header>
+  <main class="discover">
+    <h1 class="discovertitle">Discover the city of Syracuse</h1>
+    
+    
+    <div class="historyContainer">
+      <picture class="william">
+      <img class="images" src="images/placeholder300x400.png" data-src="images/WilliamGalbraith250x300.webp" alt="Picture of William Galbraith">
+      </picture>
+      <div class="historyContent">
+        <h2>History of Syracuse</h2>
+        <p>George Henry Payne originaly started up the first salt works in Syracuse.
+          He was able to harvest salt crystals by evaporating the salt water in special
+        ponds. In August of 1885, William W. Galbraith bought George Payne's salt works.
+        He adopted the brand name Syracuse, named after Syracuse, New York, 
+        where salt was being produced at the time. The name "Syracuse" was subsequently
+        adopted as the name of our city.
+        </p>
+      </div>
+      <picture class="saltMill">
+        <img class="images" src="images/placeholder300x400.png" data-src="images/OldSyracuseSaltMill350x250.webp" alt="Picture of the old Syracuse Salt Mill">
+        <figcaption class="saltmill">Syracuse Salt Mill</figcaption>
+      </picture>
+    </div>
+
+
+    <div class="populationContainer">
+      <div class="populationinfo">
+        <h2>Population</h2>
+        <p>The current population of Syracuse is 33,703. It is the 30th largest 
+          city in Utah and the 1350th largest city in the United States. Syracuse spans 
+          over 10 miles, and has a population density of 3,317 people per square mile.
+          Syracuse is currently growing at a rate of 2.37% annually and its population 
+          has increased by 4.86% since the most recent census.
+        </p>
+      </div>
+      <picture class="populationimg">
+        <img class="images" src="images/placeholder300x400.png" data-src="images/population350x250.webp" alt="Population Chart for Syracuse, Utah">
+        <figcaption class="popIncrease">Population Increase from 1990 - 2020</figcaption>
+      </picture>
+    </div>
+
+    <div class="locationContainer">
+      <div class="locationInfo">
+        <h2>Location of Syracuse</h2>
+        <p>Syracuse is a city that is located in Davis County, Utah. It is 
+          situated between the Great Salt Lake and interstate 15, which is 
+          about 30 miles north of Salt lake City, and west of both Clearfield and Layton.
+        </p>
+      </div>
+      <picture class="locationImg">
+        <img class="images" src="images/placeholder300x400.png" data-src="images/MapOfSyracuse350x315.webp" alt="Map of Syracuse, Utah">
+        <figcaption class="googlemap">Map of Syracuse</figcaption>
+      </picture>
+    </div>
+
+
+
+
+    <div class="businessContainer">
+      <div class="businessContent">
+        <h2>Businesses in Syracuse</h2>
+        <p>The economy of Syracuse employs 21,629 people and has an unemployment rate of 
+          2.9%. Some of the largest industries in Syracuse are Professional Services 
+            numbering 174 in 2021. There are 58 Personal Services & Consultants, and 54 Builders 
+            & Contractors. With such a fast growing population, investors can take advantage
+            of this fast developing area.
+        </p>
+      </div>
+      <div class="businessImg">
+        <picture class="businessConstr">
+          <img class="images" src="images/placeholder300x400.png" data-src="images/construction350x250.webp" alt="Picture of house being contructed">
+        </picture>
+        <picture class="bulldozer">
+          <img class="images" src="images/placeholder300x400.png" data-src="images/bulldozer350x250.webp" alt="Picture of bulldozer">
+        </picture>
+      </div>
+            
+    </div>
+    <div class="economicContainer">
+      <div class="economicInfo">
+        <h2>Economic Development</h2>
+        <p>As our city grows, residents will need increased amount of goods, serives, 
+        and places to work. The city of Syracuse welcomes growth and we would assist 
+        and support those who wish to invest in us. 
+        </p>
+      </div>
+      <picture class="scenic">
+        <img class="images" src="images/placeholder300x400.png" data-src="images/scenicview350x250.webp" alt="Picture of Jensen Park Wooden Bridge">
+        <figcaption class="jensen">Jensen Park Wooden Bridge</figcaption>
+      </picture>
+        
+       
+    </div>
+  </main>
+  <footer>
+    <div class="footerImg">
+      <img src="images/SyracuseLogo_75.webp" alt="Logo for Syracuse Chamber of Commerce">
+    </div>
+    <div class="footerTitle">
+      <h3>Syracuse Chamber Of Commerce</h3>
+      <h4>2200 West 1700 South</h4>
+      <h4>Syracuse, Utah 84075</h4>
+    </div>
+    <div class="contactInfo">
+      <h4>info@syracuse.org</h4>
+      <h4>+(801) 847-5210 </h4>
+      <h4>&#128205;Location map</h4>
+    </div>
+    <div class="date">
+      &copy;<span id="year"></span> Syracuse Chamber | <strong>Mitchelle Garrett</strong> | WDD 230 Project | Last Modification: <span id="modifieddate"></span></div>
+      <div class="VisDate">
+        <p class="VisitDate">Number of Visits:<span class="visits"></span></p>    
+        <p class="VisitDate">Date/Time:  <span class="today"></span></p>
+      </div>
+  </footer>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/lazyLoading.js"></script>
+  <script src="scripts/localStorage.js"></script>
+</body>
+</html>
