@@ -164,6 +164,11 @@
     
   }
 
+  .scenic {
+    padding: 5px;
+    margin-left: 35%;
+  }
+
   .hover:hover {box-shadow: 0 0 50px #333;}
 
   .mbm-difference:hover{mix-blend-mode:difference;}
