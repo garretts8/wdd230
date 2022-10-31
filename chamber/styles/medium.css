@@ -173,29 +173,43 @@
     display: none;
   }
 
+  .historyContainer {
+    background-color: #869FC7;
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+   
+  }
   .william {
     display: none;
   }
+
+  .saltMill {
+    padding: 5px;
+    margin-top: 4%;
+    margin-left: 0;
+  } 
 
   .historyContent {
     margin-top: 5%;
   }
 
-  .businessConstr {
+  .const {
     display: none;
   }
 
-  .bulldozer {
-    margin-left: 25%;
-    margin-right: 25%;
-    
-
-    
+  .businessimg {
+   margin-left: 25%;
+    padding: 5px;
   }
 
   .scenic {
     padding: 5px;
     margin-left: 30%;
   }
+
+  .hover:hover {box-shadow: 0 0 50px #333;}
+  .mbm-difference:hover{mix-blend-mode:difference;}
   
 }

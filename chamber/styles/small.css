@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 
 h4 {
@@ -84,7 +84,7 @@ nav ul li a {
   font-size: 1rem;
 }
 
-nav ul li a:hover {
+  a:hover {
   background-color: #869FC7;
   color: #0A1128;
 }
@@ -140,7 +140,7 @@ strong {
 .discover {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: .05fr .75fr 1fr 1fr 1fr;
+  grid-template-rows: .05fr .25fr 1fr 1fr 1fr;
 }
 
 #banner {
@@ -351,36 +351,39 @@ strong {
   color:white;
   text-align: center;
   padding:10px;
-  margin: 5px 0px;;
+  margin: 10px 0px;
   grid-column: 1;
   grid-row: 1;
-  
-  
 }
 
 .historyContainer {
-  background-color: #869FC7;
-  display: flex;
   grid-column: 1;
   grid-row: 2;
   padding: 5px;
-  margin-top: 10px
-
+  margin-top: 10px;
+  background-color: #869FC7;
+  
 }
 
 .william {
-  padding: 5px;
+  display:none;
 }
 
 .historyContent {
-  padding: 5px;
+  padding: 10px;
+  text-align: left;
+
+}
+
+.histitle {
   text-align: center;
-  /* background-color: #98E9DC; */
 }
 
 .saltMill {
   padding: 5px;
-  margin-top: 4%;
+  margin-left: 12%;
+  
+
 }
 
 .populationContainer {
@@ -393,18 +396,22 @@ strong {
 }
 
 .populationinfo {
-  text-align: center;
+  text-align: left;
   padding: 10px;
   background-color: #98E9DC;
+  margin: auto;
+}
+
+.poptitle {
+  text-align: center
 }
 
 .populationimg {
   margin: auto;
-   
 }
 
 .locationContainer {
-  display:grid;
+  display: grid;
   grid-column: 1;
   grid-row: 4;
   padding: 5px;
@@ -413,14 +420,18 @@ strong {
 }
 
 .locationInfo {
-  text-align: center;
-  padding: 5px;
-  
+  text-align: left;
+  padding: 10px;
+  margin: auto;
+}
+
+.loctitle {
+  text-align: center
 }
 
 .locationImg {
-  margin:auto;
-  padding: 5px
+  margin: auto;
+  padding: 10px
 }
 
 .businessContainer {
@@ -432,27 +443,30 @@ strong {
 }
 
 .businessContent {
+  text-align: left;
+  padding: 10px;
+}
+
+.bustitle {
   text-align: center;
-  padding: 5px;
 }
 
 .businessImg {
   padding: 5px;
-  margin-left: 5%
-  
+  /* margin: auto; */
 }
 
-.businessConstr {
-  margin-left: 10%;
-  padding: 5px;
+.businessimg {
+  margin-left: 15%
 }
 
-.bulldozer {
-  padding: 5px;
-  margin-left: 10%;
+.const {
+  display: none;
 }
 
-
+.bull {
+  margin-left: 2.5px;
+}
 
 .economicContainer {
   grid-column:1;
@@ -463,15 +477,22 @@ strong {
 }
 
 .economicInfo {
-  padding: 5px;
+  padding: 10px;
+  text-align: left;
+  margin: auto;
+}
+
+.ecotitle {
   text-align: center;
 }
 
 .scenic {
-  padding: 5px;
-  margin-left: 25%;
+  margin-left: 15%
 }
 
+.figwilliam {
+  text-align: center
+}
 .saltMill {
   text-align: center;
 }
@@ -492,25 +513,26 @@ strong {
 
 img{
   filter: blur(0em);
-  transition:filter 0.5s;
+  transition: filter 0.5s;
 }
 
 footer {
-  display: block;
+  display: grid;
   background-color: #0A1128;
-  color:white; 
+  color:white;
+  padding: 0; 
+  margin: 0;
 } 
-
+/* 
 .footerImg {
   display: block;
-  width: 50%;
-  margin-left: 38%;
-}
+} */
 
 .footerTitle {
   grid-column: 2/3;
   grid-row: 1/2;
   text-align: center;
+  
 }
 
 .contactInfo {
@@ -521,12 +543,27 @@ footer {
 
 .date {
   grid-column: 1/4;
-  grid-row: 2/3;
+  grid-row: 3;
   text-align: center;
   border-top: 2px solid rgba(55,93,219);
   padding: 10px;
   font-size: .8rem;
 }
+
+.VisDate {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  
+}
+
+.VisitDate {
+  font-size: small ;
+  padding: 5px
+}
+
 
 #button span:nth-child(1) {display: block;}
 #button span:nth-child(2) {display: none;}

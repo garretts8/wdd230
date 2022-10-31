@@ -1,9 +1,15 @@
 @media only screen and (min-width: 60rem) {
-  main {
+  .index{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;  
     margin: 0% 5%;
+  }
+
+  .discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .05fr .25fr 1fr 1fr 1fr;
   }
 
   h1, h2, h4 {
@@ -119,7 +125,7 @@
   }
   
   .william {
-    display: flex;
+    display: inline;
     padding: 5px;
   }
 
@@ -132,36 +138,36 @@
   .saltMill {
     padding: 5px;
     margin-top: 4%;
+    margin-left: 0;
   } 
-  
-  .businessContainer {
-    grid-column: 1;
-    grid-row: 5;
-    padding: 5px;
-    margin-top: 10px;
-    border: 2px solid #4089FF;
-  }
-
-  /* .businessContent {
-    text-align: center;
-   
-  } */
 
   .businessImg {
-    display: flex;
+    padding: 5px;
   }
-
-  .businessConstr {
-    display:inline;
-    flex: 1 1 auto;
-    margin: 0px
-    
+  
+  .businessimg {
+    display: flex;
+    margin-left: 20%;
+  }
+  
+  .const {
+    display: grid;
+    margin-right: 5px;
+  }
+  
+  .bull {
+    margin-left: 5px;
   }
 
   .bulldozer {
     margin: 0px;
     
   }
+
+  .hover:hover {box-shadow: 0 0 50px #333;}
+
+  .mbm-difference:hover{mix-blend-mode:difference;}
+
 
 }
   
