@@ -491,10 +491,13 @@ strong {
 }
 
 .figwilliam {
-  text-align: center
+  margin-top: 33%;
+  
+  text-align: left;
 }
 .saltMill {
   text-align: center;
+  margin-top: 30%;
 }
 .popIncrease{
   text-align: center;
