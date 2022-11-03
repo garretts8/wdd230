@@ -1,0 +1,94 @@
+table {
+	table-layout: fixed;
+  margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 30px var(--shadow);
+	border-collapse: collapse;
+  width: 100%;
+}
+
+thead th:nth-child(1) {
+  width: 100%;
+}
+
+thead th:nth-child(2) {
+  width: 50%;
+}
+
+thead th:nth-child(3) {
+  width: 50%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+tbody td {
+  text-align: center;
+}
+
+.sales {
+  color: white;
+  background-color: #26734D;
+}
+
+.head {
+  background-color: #92B9A6;
+}
+
+:root {
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+@media all and (min-width: 500px) {
+  .sales {
+    color: white;
+    background-color: blue;
+  }
+
+  .head {
+    background-color: lightskyblue;
+  }
+  
+}
+
+@media all and (min-width: 600px) {
+  .sales {
+    color: black;
+    background-color:rgb(206, 179, 23) ;
+  }
+
+  .head {
+    background-color:rgb(237, 214, 11) ;
+  }
+  
+}
+}
