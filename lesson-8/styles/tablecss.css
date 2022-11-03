@@ -37,6 +37,7 @@ tbody td {
 
 .sales {
   color: white;
+  font-size: 1.2rem;
   background-color: #26734D;
 }
 
@@ -70,24 +71,25 @@ tbody tr:nth-child(even) {
 
 @media all and (min-width: 500px) {
   .sales {
-    color: white;
-    background-color: blue;
+    font-weight: bold;
+    background-color: rgb(51, 54, 121);
   }
 
   .head {
-    background-color: lightskyblue;
+    background-color: rgb(53, 111, 148);
   }
   
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 700px) {
   .sales {
-    color: black;
-    background-color:rgb(206, 179, 23) ;
+    color: white;
+    background-color:rgb(169, 128, 6) ;
   }
 
   .head {
-    background-color:rgb(237, 214, 11) ;
+    background-color:rgb(209, 197, 105);
+    font: 2.5rem;
   }
   
 }
