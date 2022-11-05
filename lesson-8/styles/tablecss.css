@@ -65,6 +65,11 @@ th, td {
 	border: 1px solid var(--borderlight);
 }
 
+tr:first-child th, .highlight {
+	background-color:#26734D;
+	color: var(--forelight);
+}
+
 tbody tr:nth-child(even) {
 	background-color: var(--zebra);
 }
@@ -78,6 +83,11 @@ tbody tr:nth-child(even) {
   .head {
     background-color: rgb(53, 111, 148);
   }
+
+  tr:first-child th, .highlight {
+    background-color:rgb(51, 54, 121);
+    color: var(--forelight);
+  }
   
 }
 
@@ -90,6 +100,10 @@ tbody tr:nth-child(even) {
   .head {
     background-color:rgb(209, 197, 105);
     font: 2.5rem;
+  }
+  tr:first-child th, .highlight {
+    background-color:rgb(169, 128, 6);
+    color: var(--forelight);
   }
   
 }

@@ -8,12 +8,14 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
   width: 100%;
   margin: auto;
-  max-width: 1200px;
+  max-width: 900px;
+  min-width: 350px;
+
 }
 
 header {
   display: grid;
-  grid-template-columns: 20% 1fr 1fr 1fr;
+  grid-template-columns: .5 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   background-color: #0A1128;
   padding: 10px;
@@ -44,9 +46,9 @@ p {
   font-size: 16px;
 }
 
-h1 {
+/* h1 {
   font-size: 1.2rem;
-}
+} */
 
 h2 {
   font-size: 1.2rem;
@@ -135,6 +137,7 @@ strong {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 5px 5px;
+  padding: 5px;
 }
 
 .discover {
@@ -142,6 +145,37 @@ strong {
   grid-template-columns: 1fr;
   grid-template-rows: .05fr .25fr 1fr 1fr 1fr;
 }
+
+.thankTitle {
+  text-align: center;
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color: white;
+  padding: 8px;
+} 
+
+.thankpara2  {
+  border-top: 2px solid #0A1128;
+  border-bottom: 2px solid #0A1128;
+  padding: 20px;
+  text-align: center;
+  background-color: #869FC7;
+}
+
+.mainJoin {
+  width: 95%;
+  margin: 10px auto;
+  background-color: #EDEBD7;
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+
+.thankpara {
+  padding: 10px;
+  font-weight:500;
+}
+
 
 #banner {
   background-color: #98E9DC;
@@ -180,14 +214,11 @@ strong {
 .herofig {
   margin: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .heroimg {
  width: 100%;
- height: 100%;
- /* margin-bottom: 10px;
- overflow: hidden; */
 }
 
 
@@ -203,7 +234,7 @@ strong {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  float: right;
+  
   background-color: #98E9DC;
   border-radius: 8px;
   box-shadow: 10px 10px 10px #000;
@@ -325,7 +356,7 @@ strong {
 
 .titansimg {
   opacity: 0.5;
-  height: 10%;
+  /* height: 10%; */
   width: 20%;
   margin-left: 40%;
 }
@@ -382,8 +413,6 @@ strong {
 .saltMill {
   padding: 5px;
   margin-left: 12%;
-  
-
 }
 
 .populationContainer {
@@ -566,6 +595,7 @@ footer {
   font-size: small ;
   padding: 5px
 }
+
 
 
 #button span:nth-child(1) {display: block;}

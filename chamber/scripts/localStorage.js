@@ -19,4 +19,5 @@ localStorage.setItem("visits-ls", numVisits);
 // show todays date.
 todayDisplay.textContent = Date.now();
 
-window.localStorage.setItem("firstDay",`${monthNumber.getMonth()}${todaysDate.getDate()} ${todaysDate.getFullYear()}`);
+
+// window.localStorage.setItem("firstDay",`${monthNumber.getMonth()}${todaysDate.getDate()} ${todaysDate.getFullYear()}`);
