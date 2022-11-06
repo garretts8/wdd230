@@ -57,4 +57,5 @@ const modifiedDate = `${monthNumber}/${dateName}/${year} ${timeHour.toString().p
  
 document.getElementById('currentdate').textContent = currentDate;
 document.getElementById('modifieddate').textContent = modifiedDate;
+document.getElementById('subtime').textContent = modifiedDate;
 document.getElementById('year').textContent = year;

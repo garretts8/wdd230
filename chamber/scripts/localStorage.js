@@ -16,8 +16,14 @@ if (numVisits !== 0) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
+
+
 // show todays date.
 todayDisplay.textContent = Date.now();
 
 
 // window.localStorage.setItem("firstDay",`${monthNumber.getMonth()}${todaysDate.getDate()} ${todaysDate.getFullYear()}`);
+const subTime = document.getElementById('subtime').textContent;
+console.log(subTime);
+// let subTimeLS = (window.localStorage.getItem("subTime-ls"));
+localStorage.setItem("subTime-ls", subTime);

@@ -47,27 +47,64 @@
     </header>
       <div id="banner">
       </div>
-    <main>
-      <h1>Syracuse Chamber of Commerce Application Form</h1>
+    <main class="joinHTML">
+      <h1 class="joinFormTitle">Syracuse Chamber of Commerce Application Form</h1>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Application Information</legend>
-          <label>First Name* <input type="text" name="fname" required></label>
-          <label>Last Name* <input type="text" name="lname" required></label>
-          <label>Business Title <input type="text" name="bustitle"></label>
-          <label>Business Name* <input type="text" name="busname" required></label>
-          <label>Email* <input type="email" name="email" placeholder= "someone@gmail.com" required></label>
-          <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+          <label class="top">First Name* <input type="text" name="fname" required></label>
+          <label class="top">Last Name* <input type="text" name="lname" required></label>
+          <label class="top">Email* <input type="email" name="email" placeholder= "someone@gmail.com" required></label>
+          <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+          <label class="top">Business Title <input pattern="[A-Za-z\-]{7}" title="Only Alpha characters. Max 7 letters including hyphen" type="text" name="bustitle"></label>
+          <label class="top">Business Name* <input type="text" name="busname" required></label>
+          <label  class="top" for="textArea">A brief description of your business</label>
+          <textarea id="textArea" name="msg" maxlength="140" rows="5"></textarea>
         </fieldset>
         <fieldset>
           <legend>Membership level</legend>
           <div>Select Membership Level</div>
-          <label><input type="radio" name="member" value="npmember">NP Membership</label>
-          <label><input type="radio" name="member" value="bronzemember">Bronze Membership</label>
-          <label><input type="radio" name="member" value="silvermember">Silver Membership</label>
-          <label><input type="radio" name="member" value="goldmember">Gold Membership</label>
+          <label class="sbs"><input type="radio" name="member" value="npmember"> NP Membership</label>
+          <label class="sbs"><input type="radio" name="member" value="bronzemember"> Bronze Membership</label>
+          <label class="sbs"><input type="radio" name="member" value="silvermember"> Silver Membership</label>
+          <label class="sbs"><input type="radio" name="member" value="goldmember"> Gold Membership</label>
         </fieldset>
+        <input type="submit" value="Become Member of Commerce" class="submitBtn">
+        <div>
+          <p id="subtime" style="display: none;"></p>
+        </div>
+        <!-- <input onclick=" document.getElementById('submittedtime').style.color='blue'" class='close' title="Close submittedtime"></input> -->
       </form>
+      <div class="membershipbenefits">
+        <h3 class="membenefits">Membership Benefits</h3>
+        <h4 class="joinH4">NP membership</h4>
+        <ul>
+          <li>NP Members can post and show job openings on the Chamber Job Board.</li>
+          <li>Expand their reach through corporate events posted to the Community Calendar.</li> 
+        </ul>
+        <h4 class="joinH4">Bronze Membership level</h4>
+        <ul>
+          <li>Benefits of the NP membership</li>
+          <li>Invitation to workshops, trainings and programs</li>
+          <li>Knowledge about key topics, upcoming events and unique opportunites available.</li>
+          <li>Membership orientations to learn benefits and meet other commerce members.</li>
+          </ul>
+        <h4 class="joinH4">Silver Membership</h4>
+          <ul>
+            <li>Benefits of Bronze membership.</li>
+            <li>SEO (Search Engine Optimized) listing in the Online Chamber Business Directory.</li>
+            <li>Networking opportunities with member-pricing for programs, meetings and signature events.</li>
+          </ul>
+        <h4 class="joinH4">Gold Membership</h4>
+          <ul>
+            <li>Benefits of Silver Membership.</li>
+            <li>Chamber referrals to your business.</li>
+            <li>Option to post your company's announcements, and advertisement
+               in Member News section of the Chamber website.
+            </li>
+            <li>sponsorship opportunities</li>
+          </ul>
+      </div> 
     </main>
     <footer>
       <div class="footerImg">
@@ -83,8 +120,10 @@
         <h4>+(801) 847-5210 </h4>
         <h4>&#128205;Location map</h4>
       </div>
+      <p class="VisitDate">Date loaded:  <span class="today"></span></p>
       <div class="date">
         &copy;<span id="year"></span> Syracuse Chamber | <strong>Mitchelle Garrett</strong> | WDD 230 Project | Last Modification: <span id="modifieddate"></span>
+      </div>
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="https://kit.fontawesome.com/c12ac5d956.js" crossorigin="anonymous"></script>
@@ -92,5 +131,6 @@
     <script src="scripts/banner.js"></script>
     <!-- <script src="scripts/windchill.js"></script> -->
     <script src="scripts/lazyLoading.js"></script>
+    <script src="scripts/localStorage.js"></script>
   </body>
 </html>
