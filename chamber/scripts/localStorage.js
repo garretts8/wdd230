@@ -27,3 +27,13 @@ const subTime = document.getElementById('subtime').textContent;
 console.log(subTime);
 // let subTimeLS = (window.localStorage.getItem("subTime-ls"));
 localStorage.setItem("subTime-ls", subTime);
+
+
+// function toggleMenu() {
+// 	document.getElementById("subtime").textContent.classList.toggle("open");
+// 	document.getElementById("submitBtn").classList.toggle("open");
+
+// }
+
+// const x = document.getElementById("submitBtn");
+// x.onclick = toggleMenu;
