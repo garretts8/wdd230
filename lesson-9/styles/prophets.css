@@ -1,0 +1,78 @@
+body {
+  background-color: #b9b9cc10;
+}
+
+h1 {
+  font-family: 'Bona Nova', serif;
+  color: #4D4D96;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Bree Serif', serif;
+  color: #4D4D96;
+  font-size: 2rem;
+  
+}
+
+p {
+  font-family: 'Bree Serif', serif;
+  color: black;
+  margin: 0;
+}
+
+header, main, footer {
+  margin: 1rem;
+  position: relative;
+} 
+
+header, footer {
+  background-image: linear-gradient(#d4d4e400, #B9B9CC,#404046f6 );
+  padding: 2px;
+  text-align: center;
+} 
+
+footer {
+  padding: 25px;
+}
+
+main {
+  margin: 0 2rem;
+  background-color: rgb(226, 223, 223);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2px;
+  background-color: rgb(226, 223, 223);
+  border: 22px solid rgb(226, 223, 223);
+}
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  border: 2px solid#4D4D96;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B9B9CC;
+  /* background-color: rgb(226, 223, 223); */
+}
+
+/* section > p {
+  min-height: px;
+} */
+
+img {
+  width: auto;
+  max-width: 325px;
+  box-shadow: 0 0 40px rgb(15, 15, 15);
+  height: 350px;
+}
+
+.para {
+  margin-bottom: 15px;
+
+}
+
