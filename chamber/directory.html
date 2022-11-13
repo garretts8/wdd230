@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syracuse Chamber of Commerce/Join Page</title>
+    <meta name="description" content="Syracuse Chamber of Commerce website assignment for WDD 230: Web Frontend Development Directory Page">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body class="dirBody">
+    <header class="clearfix">
+      <figure class="logo">
+        <img class = "logo" src="images/SyracuseLogo_75.webp" alt="Logo for Syracuse Chamber of Commerce"
+        srcset="images/SyracuseLogo_75.webp 1x, images/SyracuseLogo_150.webp 2x, 
+        images/SyracuseLogo_300.webp 3x">
+      </figure>
+      <div id="commerceTitle">
+        <h1>Syracuse</h1>
+        <h2>Chamber of Commerce</h2>
+      </div>
+      <nav class="headerNav">
+        <!-- add hamburger menu button - &#9776 is the code for the symbol -->
+        <button id="button"><span>&#9776;</span><span>X</span></button>
+        <ul id="ulList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social"> 
+        <a class="facebook" href="https://www.facebook.com/"><img src="images/facebook100.png" alt="Facebook icon"></a>
+        <a class="Linkedin" href="https://www.linkedin.com/"><img src="images/linkedin100.png" alt="Linedin icon"></a>
+      </div>
+      <div class="currentdate"><span id="currentdate"></span></div>
+    </header class="dirheader">
+    <main class="dirMain">
+      <h1 class="directoryh1">Syracuse Chamber of Commerce Businesses </h1>
+      <div class="businesses">
+      </div>
+    </main>
+    <footer class="dirfooter">
+      <div class="footerImg">
+        <img src="images/SyracuseLogo_75.webp" alt="Logo for Syracuse Chamber of Commerce">
+      </div>
+      <div class="footerTitle">
+        <h3>Syracuse Chamber Of Commerce</h3>
+        <h4>2200 West 1700 South</h4>
+        <h4>Syracuse, Utah 84075</h4>
+      </div>
+      <div class="contactInfo">
+        <h4>info@syracuse.org</h4>
+        <h4>+(801) 847-5210 </h4>
+        <h4>&#128205;Location map</h4>
+      </div>
+      <div class="date">
+        &copy;<span id="year"></span> Syracuse Chamber | <strong>Mitchelle Garrett</strong> | WDD 230 Project | Last Modification: <span id="modifieddate"></span>
+      </div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="https://kit.fontawesome.com/c12ac5d956.js" crossorigin="anonymous"></script>
+    <script src="scripts/menu_open.js"></script>
+    <script src="scripts/lazyLoading.js"></script>
+    <script src="scripts/directory.js"></script>
+  </body>
+</html>

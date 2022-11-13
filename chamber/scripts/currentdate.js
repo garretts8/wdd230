@@ -53,9 +53,12 @@ const timeMinute = todaysDate.getMinutes();
 const timeSecond = todaysDate.getSeconds();
 const currentDate = `${dayName}, ${dateName} ${monthName} ${year}`;
 const modifiedDate = `${monthNumber}/${dateName}/${year} ${timeHour.toString().padStart(2, '0')}:${timeMinute.toString().padStart(2, '0')}:${timeSecond.toString().padStart(2, '0')} `;
+const subTime = document.getElementById('subtime');
 // //const currentDate = `${monthName}/${dayName}/${todaysDate.getFullYear()} ${time} `; // Used to print AM/PM formated time
  
 document.getElementById('currentdate').textContent = currentDate;
 document.getElementById('modifieddate').textContent = modifiedDate;
-document.getElementById('subtime').textContent = modifiedDate;
+if (subTime !== null) {
+  subTime.textContent = modifiedDate;
+}
 document.getElementById('year').textContent = year;

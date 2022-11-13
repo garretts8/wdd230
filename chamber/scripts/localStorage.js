@@ -1,6 +1,7 @@
 // initialize display elements
 const visitsDisplay = document.querySelector(".visits");
 const todayDisplay = document.querySelector(".today");
+const submitButton = document.querySelector('.submitBtn');
 
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
@@ -16,24 +17,16 @@ if (numVisits !== 0) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
-
-
 // show todays date.
 todayDisplay.textContent = Date.now();
 
+// "if" statement only needed if page does not have a submitBtn
+if (submitButton !== null) {
+	submitButton.addEventListener('click', submitFunction);
+}
 
-// window.localStorage.setItem("firstDay",`${monthNumber.getMonth()}${todaysDate.getDate()} ${todaysDate.getFullYear()}`);
-const subTime = document.getElementById('subtime').textContent;
-console.log(subTime);
-// let subTimeLS = (window.localStorage.getItem("subTime-ls"));
-localStorage.setItem("subTime-ls", subTime);
-
-
-// function toggleMenu() {
-// 	document.getElementById("subtime").textContent.classList.toggle("open");
-// 	document.getElementById("submitBtn").classList.toggle("open");
-
-// }
-
-// const x = document.getElementById("submitBtn");
-// x.onclick = toggleMenu;
+function submitFunction() {
+	// set local storage to modifiedDate from currentdate.js
+	// window.localStorage.setItem("firstDay",`${monthNumber.getMonth()}${todaysDate.getDate()} ${todaysDate.getFullYear()}`);
+		localStorage.setItem("subTime-ls", modifiedDate);
+}

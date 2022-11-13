@@ -10,7 +10,10 @@ body {
   margin: auto;
   max-width: 900px;
   min-width: 350px;
+}
 
+.dirBody {
+  max-width: 1200px
 }
 
 header {
@@ -28,7 +31,7 @@ header {
   grid-column: 1;
   grid-row: 1;
   margin-left: 2%;
-  width: 75%;
+  width: 100%;
 }
 
 #commerceTitle {
@@ -41,17 +44,58 @@ h1 h2 h3 h4 {
   font-family: 'Noto Serif', serif;
 }
 
+.directoryh1 {
+  font-size: 2rem;
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.directoryh2 {
+  font-size: 1.4rem;
+}
+
+.dirpara {
+  font-size: large;
+  padding: 3px 0px;
+  margin: 0px;
+}
+
+.dirPhone {
+  margin-bottom: 20px;
+}
+
+.dirquote {
+  font-style: italic;
+  font-weight:bold
+}
+
+.dirurl {
+  text-decoration: none;
+  color:rgba(55,93,219)
+}
+
+.dirurl:hover {
+  background-color: #98E9DC;
+  padding: 4px;
+
+}
+
 p {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
 
-/* h1 {
+h1 {
   font-size: 1.2rem;
-} */
+  margin: 0px auto;
+}
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 h4 {
@@ -175,6 +219,16 @@ strong {
   padding: 5px;
 
 }
+
+.dirMain {
+  background-color: #EDEBD7;
+  margin: 0 15px;
+}
+
+.dirheader, .dirMain, .dirfooter {
+  position: relative;
+}
+
 
 .thankpara {
   padding: 10px;
@@ -688,11 +742,32 @@ form label.top input:required:valid {
   max-width: 20rem;
   background-color: rgba( 0,0,0,0.1);
   box-sizing: border-box;
+}
 
-  
- }
+.businesses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2px;
+  background-color: #869FC7;
+  border: 22px solid #869FC7;
+}
 
+.dirSection {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  border: 2px solid rgba(55,93,219);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  /* background-color: rgb(226, 223, 223); */
+}
 
+.dirImg {
+  width: auto;
+  max-width: 325px;
+  box-shadow: 0 0 20px rgb(15, 15, 15);
+}
 
 
 

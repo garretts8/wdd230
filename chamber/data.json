@@ -1,0 +1,112 @@
+{
+  "directory": [
+    {
+      "businessName": "B&Js Family Restaurant & Lounge",
+      "address": "347 5th St., Syracuse, Utah 84075",
+      "phone": "(402) 269-9917",
+      "websiteURL": "https://www.facebook.com/BjsFamilyRestarauntAndLounge/",
+      "logo": "images/B&J's300x150.jpg",
+      "membershipLevel": 2,
+      "quote": "American Family Restaurant Style Restaurant, Bar & Grill"
+    },    
+    {
+      "businessName": "Century Communities",
+      "address": "2715 S. Shoreline Drive, Syracuse UT 84075",
+      "phone": "(385) 345-4993",
+      "websiteURL": "https://www.centurycommunities.com/",
+      "logo": "images/CenturyCommunities300x150.jpg",
+      "membershipLevel": 3,
+      "quote": "It's A Great Time To Buy NEW!!"
+    },
+    {
+      "businessName": "Countryside Bank",
+      "address": "976 11th Street, Syracuse, UT 84075",
+      "phone": "402-269-2100",
+      "websiteURL": "https://www.gosyracusene.com/?portfolio=countryside-bank/",
+      "logo": "images/CountrySideBank300x150.jpg",
+      "membershipLevel": 3,
+      "quote": "Growing Community, Harvesting Success"
+    },    
+    {
+      "businessName": "Good Samaritan Society",
+      "address": "1622 Walnut St., Syracuse, UT, 84075",
+      "phone": "(402) 409-2437",
+      "websiteURL": "https://www.good-sam.com/locations/syracuse",
+      "logo": "images/GoodSamaritan300x150.jpg",
+      "membershipLevel": 1,
+      "quote": "Find the right care for your senior living needs"
+    },
+    {
+      "businessName": "Great clips",
+      "address": "899 W 1700 S., Syracuse, UT 84075",
+      "phone": "(801) 825-1606",
+      "websiteURL": "https://salons.greatclips.com/us/ut/syracuse/899-w-1700-s",
+      "logo": "images/GreatClips300x150.jpg",
+      "membershipLevel": 2,
+      "quote":"Haircuts for Everyone"
+    },
+    {
+      "businessName": "Rejuvu Day Spa and Beauty Haven",
+      "address": "185 N. 2000 W., Syracuse, UT 84075",
+      "phone": "(801) 525-8348",
+      "websiteURL": "https://www.rejuvudayspa.com//",
+      "logo": "images/Rejuvu300x150.jpg",
+      "membershipLevel": 4,
+      "quote": "Back to Self Care"
+    },    
+    {
+      "businessName": "Russon Mortuary & Crematory",
+      "address": "1585 W. 300 S., Syracuse, UT 84075",
+      "phone": "(801) 825-3655",
+      "websiteURL": "https://www.russonmortuary.com/",
+      "logo": "images/russon300x150.jpg",
+      "membershipLevel": 4,
+      "quote": "Our Family serving your family for over 65 years"
+    },
+    {
+      "businessName": "Snap Fitness",
+      "address": "2107 W 1700 S, Syracuse UT 84075",
+      "phone": "801-825-0191",
+      "websiteURL": "https://www.snapfitness.com/us/gyms/syracuse-ut/?utm_source=extnet&utm_medium=yext/",
+      "logo": "images/SnapFitness300x150.jpg",
+      "membershipLevel": 3,
+      "quote": "Train With Us!"
+    },
+    {
+      "businessName": "Syracuse Dance Academy",
+      "address": "1835 W. 2250 S., Syracuse Utah 84075",
+      "phone": "(801) 776-4313",
+      "websiteURL": "http://syracusedance.com/",
+      "logo": "images/SyracuseDance300x150.jpg",
+      "membershipLevel": 2,
+      "quote": "We do not teach your student a dance, we teach how to dance!"
+    },  
+    {
+      "businessName": "Syracuse Dental & Implants",
+      "address": "1747 S. Heritage Ln., Syracuse, UT 84075",
+      "phone": "801-776-2461",
+      "websiteURL": "https://www.syracusedentalandimplants.com/",
+      "logo": "images/SyracuseDental300x150.jpg",
+      "membershipLevel": 3,
+      "quote": "Real Patients, Real Experiences"
+    },
+    {
+      "businessName": "Syracuse Lumber Co.",
+      "address": "503 Mohawk Street, Syracuse, Utah 84075",
+      "phone": "(402) 269-3221",
+      "websiteURL": "https://syracuselumber.com/",
+      "logo": "images/SyracuseLumber300x150.jpg",
+      "membershipLevel": 3,
+      "quote": "Syracuses destination for lumber and building supply"
+    }, 
+    {
+      "businessName": "Valley Nursery Garden Center",
+      "address": "6484 S. 2000 E., Syracuse, UT 84075",
+      "phone": "(801) 479-6060",
+      "websiteURL": "https://valleynurseryutah.com/",
+      "logo": "images/ValleyNursery300x150.jpg",
+      "membershipLevel": 4,
+      "quote": "Four Generations growing with Weber County"
+    }
+  ]
+}
