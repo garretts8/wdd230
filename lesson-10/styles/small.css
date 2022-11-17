@@ -1,0 +1,31 @@
+body {
+  font-family: 'Kalam', cursive;
+  max-width: 500px;
+  margin: auto;
+}
+
+main{
+  background-image: linear-gradient(rgb(30, 30, 61), rgb(115, 115, 223), rgb(190, 190, 224));
+}
+
+
+h1, h2, p, img, figcaption {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  border-bottom: light rgb(216, 216, 234);
+}
+
+figure {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+
+p {
+  font-size: 20px;
+}
+
+
