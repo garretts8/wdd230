@@ -92,26 +92,31 @@
         <p>(801) 525-8348</p>
       </div>
     </div>
+
+
+
+    
+
+
     <div class="weather">
-      <h3>Syracuse</h3>
-      <p id="temperatureF">
-        <strong>
-        <span>25</span> °F
-      </strong>
-      </p>
-      <p><strong>Partly Cloudy &#x26C5;</strong></p>
-      <p>H: 72&#176; &#160;  L: 44&#176;</p>
-      <p>Precipitation: 1%</p>
-      <p>Humidity: 75%</p>
-      <div class="speed">
-        <p>Wind Speed: </p>
-        <p id="windspeed"><span>15 </span>mph</p>
-      </div>
-      <div class="wind">
-        <p>Windchill: </p>
-        <p id="windchill"></p>
-      </div>
+      <h3>Weather</h3>
+      <p><strong>The Current Temperature is <span id="temperatureF"></span> &deg;F</strong></p>
+      <p>Current conditions are <span id="currentCond"></span></p>
+      <figure>
+        <img src="" alt="" id="weatherIcon"/>
+        <figcaption id="capDescript"><strong></strong></figcaption>
+      </figure>
+      <p>Wind Speed: <span id="windspeed"></span> mph</p>
+      <p>Windchill: <span id="windchill"></span> </p>
     </div>
+
+
+
+
+
+
+
+
     <div class="join">
       <button class="joinbtn">Join us!</button>
       <p class="joinpara">Come see how joining will benefit you, your business, and your community!</p>
@@ -141,9 +146,12 @@
       <h4>info@syracuse.org</h4>
       <h4>+(801) 847-5210 </h4>
       <h4>&#128205;Location map</h4>
+      
     </div>
+    
     <div class="date">
       &copy;<span id="year"></span> Syracuse Chamber | <strong>Mitchelle Garrett</strong> | WDD 230 Project | Last Modification: <span id="modifieddate"></span>
+      <p>Weather brought to you by: <a class="weathersite" href="https://openweathermap.org/">https://openweathermap.org/</a></p>
   </footer>
   <script src="scripts/currentdate.js"></script>
   <script src="https://kit.fontawesome.com/c12ac5d956.js" crossorigin="anonymous"></script>
@@ -151,5 +159,6 @@
   <script src="scripts/banner.js"></script>
   <script src="scripts/windchill.js"></script>
   <script src="scripts/lazyLoading.js"></script>
+  
 </body>
 </html>
