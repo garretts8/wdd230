@@ -6,6 +6,7 @@ fetch("data.json")
   .then(function (jsonObject) {
     console.log(jsonObject);
     const busDirectory = jsonObject['directory'];
+    // Call function to display all businesses info
     busDirectory.forEach(displayBusinesses);
   });
 
@@ -15,6 +16,7 @@ fetch("data.json")
     let pAddress = document.createElement('p');
     let pPhone = document.createElement('p');
     let image = document.createElement('img');
+    let altImg = document.createElement('alt');
     // let pUrl = document.createElement('p');
     let url = document.createElement('a');
     let pQuote = document.createElement('p');
@@ -24,6 +26,7 @@ fetch("data.json")
     pPhone.textContent = `${busDirectory.phone}`;
     pQuote.textContent = `${busDirectory.quote}`;
     url.textContent = `${busDirectory.businessName}`;
+    altImg.innerHTML = `${busDirectory.businessName} logo`;
 
     url.setAttribute('href', busDirectory.websiteURL);
     image.setAttribute('src', busDirectory.logo);
@@ -36,6 +39,7 @@ fetch("data.json")
     card.appendChild(image);
     // card.appendChild(pUrl);
     card.appendChild(pQuote);
+    image.appendChild(altImg);
 
     pAddress.setAttribute('class', 'dirpara');
     pPhone.setAttribute('class', 'dirpara, dirPhone');
