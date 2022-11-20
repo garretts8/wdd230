@@ -5,6 +5,9 @@ const captionDesc = document.querySelector("#capDescript");
 const windSpeed = document.querySelector("#windspeed");
 const windChill = document.querySelector("#windchill");
 
+const imagesrc = document.createElement('src');
+const imageAlt = document.createElement('Alt');
+
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=41.089&lon=-112.065&units=imperial&appid=dc73736434f97a683e7d8dfe5d65348e"
 
 async function apiFetch() {
@@ -32,8 +35,6 @@ function displayResults(weatherData) {
   currentTemp.innerHTML = `${weatherData.main.temp.toFixed()} °F`;
   currentCond.innerHTML = capitalize(weatherData.weather[0].description);
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  // capDescript.innerHTML = capitalize(weatherData.weather[0].description);
-  // const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather.[0].icon}.png`;
   const altDesc = capitalize(weatherData.weather[0].description);
   windSpeed.innerHTML = `${weatherData.wind.speed}`;
   windChill.innerHTML = chillF(temperatureF, windSpeed);
@@ -41,6 +42,10 @@ function displayResults(weatherData) {
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', altDesc);
+  // append src and alt as children of img
+  weatherIcon.appendChild(imagesrc);
+  weatherIcon.appendChild(imageAlt);
+
   
 }
 
