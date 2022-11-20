@@ -22,7 +22,6 @@
       srcset="images/SyracuseLogo_75.webp 1x, images/SyracuseLogo_150.webp 2x, 
       images/SyracuseLogo_300.webp 3x">
     </figure>
-    
     <div id="commerceTitle">
       <h1>Syracuse</h1>
       <h2>Chamber of Commerce</h2>
@@ -47,12 +46,12 @@
   </header>
     <div id="banner">
     </div>
-  <main class="index">
+  <main class="mainindex">
     <div class="event">
       <h3>Upcoming Events</h3>
       <img class="eventimg" src="images/Syracuse_event100x100.jpg" alt="Pictures of pumpkins with a title Syracuse Vity Pumpkin Walk">
       <div class="eventinfo">
-      <p> <strong>OCTOBER 27-29, 2022</strong></p>
+      <p> <strong>November 27-29, 2022</strong></p>
       <p>7PM-10PM</p>
       <p>FOUNDERS PARK</p>
       <p><strong>FREE ADMISSION</strong></p></div>
@@ -63,45 +62,41 @@
 
         <img class="heroimg" src="images/wdd230-org_400.jpg" alt="Picture of meeting between two men and a woman."
         sizes="100vw"
-        srcset="images/wdd230-org400x400.jpg 350w,
-        images/wdd230-orgmedium590x290.jpg 600w,
-        images/wdd230-org880x950.jpg 800w" >
-      <!-- </figure> -->
-      <button class="herobtn">Join The Chamber</button>
+        srcset="images/Mountains600x761.jpg 600w,
+        images/Mountains800x424.jpg 800w,
+        images/Mountains1200x800.jpg 1200w" >
+      <button class="herobtn" type="submit" onclick="window.location.href='join.html';">Join The Chamber</button>
     </div>
      <div class="nested">
       <div class="spotlight1">
         <h3>Russon Mortuary & Crematory</h3>
-        <img class="russonimg" src="images/Russons.jpg" alt="Pictures of Russon logo">
-        <p class="spotlight1quote"><strong>Our Family serving your family for over 65 years</strong></p>
+        <img class="russonimg" src="images/Russon200x100.jpg" alt="Pictures of Russon logo">
+        <p class="spotlightquote"><strong>Our Family serving your family for over 65 years</strong></p>
         <p>1585 W. 300 S. Syracuse, UT 84075</p>
         <p>(801) 825-3655</p>
       </div>
       <div class="spotlight2">
         <h3>Valley Nursery</h3>
-        <img src="images/valleynursery190x100.jpg" alt="logo of Valley Nursery Garden Center">
-        <p class="spotlight2quote"><strong>Four Generations growing with Weber County</strong></p>
+        <img src="images/valleynursery200x100.jpg" alt="logo of Valley Nursery Garden Center">
+        <p class="spotlightquote"><strong>Four Generations growing with Weber County</strong></p>
         <p>6484 S. 2000 E. Syracuse, UT 84075</p>
-        (801) 479-6060
+        <p>(801) 479-6060</p>
       </div>
       <div class="spotlight3">
         <h3>Rejuvu Day Spa and Beauty Haven</h3>
-        <img class= "rejuvu" src="images/rejuvu.jpg" alt="Picture of the logo for Rejuvu Day and Beauty Spa">
-        <p><strong>Back to Self Care</strong></p>
+        <!-- <figure> -->
+          <img class= "rejuvu" src="images/rejuvu200x100.jpg" alt="Picture of the logo for Rejuvu Day and Beauty Spa">
+        <!-- </figure> -->
+        <p class="spotlightquote"><strong>Back to Self Care</strong></p>
         <p>185 N. 2000 W. Syracuse, UT 84075</p>
         <p>(801) 525-8348</p>
       </div>
     </div>
-
-
-
-    
-
-
     <div class="weather">
       <h3>Weather</h3>
-      <p><strong>The Current Temperature is <span id="temperatureF"></span> &deg;F</strong></p>
-      <p>Current conditions are <span id="currentCond"></span></p>
+      <p>The Current Temperature is</p>
+      <p><span id="temperatureF"></span></p>
+      <p><strong><span id="currentCond"></span></strong></p>
       <figure>
         <img src="" alt="" id="weatherIcon"/>
         <figcaption id="capDescript"><strong></strong></figcaption>
@@ -109,16 +104,8 @@
       <p>Wind Speed: <span id="windspeed"></span> mph</p>
       <p>Windchill: <span id="windchill"></span> </p>
     </div>
-
-
-
-
-
-
-
-
     <div class="join">
-      <button class="joinbtn">Join us!</button>
+      <button class="joinbtn" type="submit" onclick="window.location.href='join.html';">Join us!</button>
       <p class="joinpara">Come see how joining will benefit you, your business, and your community!</p>
     </div>
     <div class="release">
@@ -146,9 +133,7 @@
       <h4>info@syracuse.org</h4>
       <h4>+(801) 847-5210 </h4>
       <h4>&#128205;Location map</h4>
-      
     </div>
-    
     <div class="date">
       &copy;<span id="year"></span> Syracuse Chamber | <strong>Mitchelle Garrett</strong> | WDD 230 Project | Last Modification: <span id="modifieddate"></span>
       <p>Weather brought to you by: <a class="weathersite" href="https://openweathermap.org/">https://openweathermap.org/</a></p>
@@ -159,6 +144,5 @@
   <script src="scripts/banner.js"></script>
   <script src="scripts/windchill.js"></script>
   <script src="scripts/lazyLoading.js"></script>
-  
 </body>
 </html>

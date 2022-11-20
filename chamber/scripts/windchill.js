@@ -29,7 +29,7 @@ function capitalize(string) {
 apiFetch();
 
 function displayResults(weatherData) {
-  currentTemp.innerHTML = `${weatherData.main.temp.toFixed()}`;
+  currentTemp.innerHTML = `${weatherData.main.temp.toFixed()} °F`;
   currentCond.innerHTML = capitalize(weatherData.weather[0].description);
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   // capDescript.innerHTML = capitalize(weatherData.weather[0].description);
