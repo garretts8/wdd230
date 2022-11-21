@@ -18,7 +18,7 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
-todayDisplay.textContent = Date.now();
+// todayDisplay.textContent = Date.now();
 
 // "if" statement only needed if page does not have a submitBtn
 if (submitButton !== null) {
@@ -30,3 +30,22 @@ function submitFunction() {
 	// window.localStorage.setItem("firstDay",`${monthNumber.getMonth()}${todaysDate.getDate()} ${todaysDate.getFullYear()}`);
 		localStorage.setItem("subTime-ls", modifiedDate);
 }
+
+
+/////////To calculate days since last visit/////////////
+//Last date viewd site
+let visit = window.localStorage.getItem("latestVisit");
+let vis = document.getElementById("VisitedLast");
+let visits = 0;
+const today = Date.now();
+if (visit == null || visit == undefined) {
+	localStorage.setItem("latestVisit", today);
+	vis.textContent = visits;
+} else if (visit !== 0) {
+		const dayLastVisit = today - visit;
+		const oneDay = 24 * 60 * 60 * 1000;
+		const days = Math.round(dayLastVisit / oneDay); 
+		vis.textContent = days;
+		localStorage.setItem("latestVisit", today);
+};
+
