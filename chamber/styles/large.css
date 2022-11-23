@@ -7,26 +7,14 @@
     font-size: 1.3rem;
   }
 
- .mainindex{
+  /*///////////////ndex/////////////// */
+  .mainindex{
     grid-template-rows: 1fr 1fr 1fr;  
     margin: 5px 5% 0% 5%;
   }
 
   #button {
     display: none;
-  }
-
-  .discover {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .05fr .25fr 1fr 1fr 1fr;
-  }
-
-  .joinHTML {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .05fr 1fr;
-    grid-gap: 5px;
   }
 
   .commerceTitle {
@@ -58,7 +46,6 @@
   nav ul.open {
     display: flex;
   }
-
 
   nav ul li a {
     border-top: none;
@@ -106,61 +93,82 @@
     border: none;
   }
 
-  .historyContainer {
-    background-color: #869FC7;
-    display: flex;
-    grid-column: 1;
-    grid-row: 2;
-    padding: 5px;
-    margin-top: 10px
-  
+  /*//////////Discover//////////*/
+
+  .discoverMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .05fr .5fr .5fr .5fr .5fr;
+    margin: 15px;
   }
-  
+
+  .discoverMain section {
+    margin: 5px;
+  }
+
+  .populationContainer, .locationContainer, .economicContainer {
+    display: inline;
+    padding: 15px;
+  }
+
+  .historyContainer {
+    display: block;
+    padding: 5px;
+  }
+ 
+  .historyContent {
+    margin: 15px;
+    text-align: left;
+  } 
+
+  .hisImages {
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
   .william {
     display: inline;
     padding: 5px;
   }
 
-  .historyContent {
-    padding: 5px;
+  .figwilliam {
+    margin: 0;
     text-align: center;
   }
-  
-  .saltMill {
-    padding: 5px;
-    margin-top: 4%;
-    margin-left: 0;
-  } 
+
+  .saltMill { 
+    padding: 5px; 
+    text-align: center;
+  }  
 
   .businessContainer {
-    align-items: center;
+    display: block;
     margin: 0;
   }
 
-  .businessimg {
+  .businessImg {
     display: flex;
     margin: auto;
-    padding:5px;
     width: 100%;
   }
-  
+   
   .const {
     display: grid;
     margin-right: 5px;
   }
   
-  /* .bull {
-    margin-left: 5px;
-  } */
-
-  /* .bulldozer {
-    margin: 0px;
-    
-  } */
-
   .scenic {
     padding: 5px;
     margin-left: 35%;
+  }
+
+  /*////////////Form///////////////*/
+
+  .joinHTML {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .05fr 1fr;
+    grid-gap: 5px;
   }
 
   form {
@@ -192,21 +200,17 @@
     border: 1px solid rgba(55,93,219);
     border-radius: 10px;
     background-color: #869FC7;
-    width: 100%;
-    padding: 5px;
-    margin-top: 9%;
+    /* width: 100%; */
+    padding: 15px;
+    margin-top: 7%;
+    margin-bottom: 53.5%;
   }
-
-  /* .membenefits {
-    
-
-  } */
 
   .hover:hover {box-shadow: 0 0 50px #333;}
 
-  .mbm-difference:hover{mix-blend-mode:difference;}
-
-
+  .mbm-difference:hover{
+    mix-blend-mode:difference;
+  }
 }
   
 

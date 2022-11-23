@@ -19,11 +19,6 @@
     grid-template-rows: 300px 320px 320px 120px 1fr;
   }
 
-  .discover {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .05fr 1fr 1fr 1fr 1fr;
-  }
 
   h1 {
     font-size: 1.5rem;
@@ -160,36 +155,21 @@
     margin-bottom: 20px;
   }
 
-  .historyContainer {
-    background-color: #869FC7;
-    display: flex;
-    grid-column: 1;
-    grid-row: 2;
-    margin: auto;
-    /* padding-bottom: 20px; */
-   
-  }
   .william {
     display: none;
   }
 
-  .saltMill {
-    padding: 5px;
-    margin-top: 4%;
-    margin-left: 0;
-  } 
+  /* .historyContainer {
+  display: flex;
+} */
 
-  .historyContent {
-    margin-top: 5%;
-  }
+.historyContainer, .populationContainer, .locationContainer, .businessContainer, .economicContainer {
+  display: flex;
+  padding: 15px;
+}
 
   .const {
     display: none;
-  }
-
-  .businessimg {
-    margin-left: 25%;
-    padding: 5px;
   }
 
   .scenic {

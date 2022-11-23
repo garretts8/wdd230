@@ -33,7 +33,6 @@ function submitFunction() {
 
 
 /////////To calculate days since last visit/////////////
-//Last date viewd site
 let visit = window.localStorage.getItem("latestVisit");
 let vis = document.getElementById("VisitedLast");
 let visits = 0;
