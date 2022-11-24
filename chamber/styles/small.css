@@ -87,15 +87,10 @@ nav ul li a {
   font-size: 1rem;
 }
 
-/* .ulist ul {
-  width: 100%
-} */
-
   a:hover {
   background-color: #869FC7;
   color: #0A1128;
   padding: 10px;
-
 }
 
 strong {
@@ -229,9 +224,7 @@ strong {
   font-style: oblique;
 }
 
-.joinHTML {
-  padding: 5px;
-}
+
 
 .thankTitle {
   text-align: center;
@@ -280,7 +273,6 @@ strong {
   display: none;
   background-color: #869FC7;
 }
-
 
 .mainJoin {
   width: 95%;
@@ -587,6 +579,10 @@ footer {
 
 /*//////////Form////////// */
 
+.joinHTML {
+  padding: 5px;
+}
+
 .joinFormTitle {
   text-align: center;
   border: 2px solid #4089FF;
@@ -594,6 +590,7 @@ footer {
   color:white;
   margin: 10px 0;
   padding: 10px;
+  font-size: 2rem;
 }
 
 .membershipbenefits {
@@ -671,8 +668,6 @@ form label.top input:required:valid {
   box-sizing: border-box;
 }
 
-
-
 /*///////////////directory///////////////*/
 .dirMain {
   background-color: #98E9DC;
@@ -682,7 +677,6 @@ form label.top input:required:valid {
 .dirheader, .dirMain, .dirfooter {
   position: relative;
 }
-
 
 .directoryh1 {
   font-size: 2rem;
@@ -734,7 +728,6 @@ form label.top input:required:valid {
   font-weight:bold
 }
 
-
 .list .dirquote {
   display: none;
 }
@@ -778,13 +771,7 @@ form label.top input:required:valid {
 .menu {
   display: flex;
   margin: 0 40%;
-  /* align-content: center;
-  width: 100%; */
-	/* margin: 1rem auto; */
-	/* border: 1px solid rgba(0, 0, 0, 0.1); */
 	padding: 0.5rem;
-	
-	/* text-align: center; */
 }
 
 .menu button {
@@ -800,14 +787,94 @@ form label.top input:required:valid {
 	display: none; /* smaller viewports only */
 }
 
-
 @media (min-width: 700px) {
 	.list section img {
 		display: block;
 	}
 }
 
+/*//////////Contact/////////////*/
 
+.contactMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 10px;
+  grid-gap: 10px;
+}
+
+.contacth1 {
+  grid-column: 1/3;
+  grid-row: 1;
+  border: 2px solid rgba(55,93,219);
+  background-color: #0A1128;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.contactP {
+  grid-column: 1/3;
+  grid-row: 2;
+  margin: 10px;
+}
+
+.contactForm {
+  grid-column: 1/2;
+  margin: 10px;
+}
+
+.contactContent {
+  display: none;
+  text-align: center;
+}
+
+form label.info {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+}
+
+form label.info input {
+  -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    /* max-width: 20rem; */
+    background-color: rgba( 0,0,0,0.1);
+}
+
+form label.info input:required {
+  border-left:red solid 6px;
+}
+
+
+form label.info input:required:valid {
+  border-left: green solid 6px;
+}
+/* 
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  /* display: none; 
+}
+
+.moveDown {
+  margin-top: 3em;
+}
+ */
 
 /* ///////////////button for Footer/////////////// */
 
