@@ -162,7 +162,7 @@ strong {
 }
 
 .eventimg {
-  width: 35%;
+  width: 25%;
 }
 
 .eventinfo {
@@ -254,27 +254,31 @@ strong {
 }
 
 .nested div {
-  margin: 10px;
+  margin: 7.5px 10px 7.5px 10px;
   border: 1px solid rgba(55,93,219);
   flex: auto;
   text-align: center;
+  background-color: #869FC7;
 }
 
-.spotlight1 {
-  background-color: #869FC7;
+.spotlightImg {
+  width: 50%;
 }
 
 .spotlightquote {
-  font-style: oblique;
+  font-style: italic;
+  font-weight: bold;
+  margin: 15px;
 }
 
-.spotlight2 {
-  background-color: #EDEBD7;
+.h3spot {
+  text-decoration: none;
+  color: #0A1128;
+  padding: 5px;
 }
 
-.spotlight3 {
-  display: none;
-  background-color: #869FC7;
+.h3spot:hover {
+  background-color:#98E9DC;
 }
 
 .mainJoin {

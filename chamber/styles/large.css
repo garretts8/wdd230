@@ -76,8 +76,17 @@
     margin: auto;
   }
 
-  .spotlight3 {
-    display: grid;
+  .spotlightImg {
+    width: 80%;
+    padding: 25px 0px;
+  }
+
+  .h3spot {
+    padding-top: 15px;
+  }
+
+  .spotlightquote {
+    padding: 15px;
   }
 
   .weather {
