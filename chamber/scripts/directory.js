@@ -1,3 +1,4 @@
+// GET json file
 const businesses = document.querySelector('.businesses');
 fetch("data.json")
   .then(function(response) {
@@ -5,10 +6,13 @@ fetch("data.json")
   })
   .then(function (jsonObject) {
     console.log(jsonObject);
+    // assign variable to JSON array
     const busDirectory = jsonObject['directory'];
-    // Call function to display all businesses info
+    // Call function to display all businesses info for Directory Page
     busDirectory.forEach(displayBusinesses);
   });
+
+  // creat tag and arrange them in order of parentage for Directory Page.
 
   function displayBusinesses(busDirectory) {
     let card = document.createElement('section');
@@ -41,6 +45,8 @@ fetch("data.json")
     card.appendChild(pQuote);
     image.appendChild(altImg);
 
+    // add classes to tags for CSS
+
     pAddress.setAttribute('class', 'dirpara');
     pPhone.setAttribute('class', 'dirpara, dirPhone');
     pQuote.setAttribute('class', 'dirpara, dirquote');
@@ -49,6 +55,8 @@ fetch("data.json")
     image.setAttribute('class', 'dirImg');
     url.setAttribute('class', 'dirurl')
 
+    // place tags in HTML
     document.querySelector('div.businesses').appendChild(card);
   }
+  
 
