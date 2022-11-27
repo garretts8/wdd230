@@ -1,20 +1,20 @@
 {
   "directory": [
     {
-      "businessName": "B&Js Family Restaurant & Lounge",
+      "businessName": "BJs Restaurant & Lounge",
       "address": "347 5th St., Syracuse, Utah 84075",
       "phone": "(402) 269-9917",
       "websiteURL": "https://www.facebook.com/BjsFamilyRestarauntAndLounge/",
-      "logo": "images/B&J's300x150.jpg",
+      "logo": "images/BJ's300x150.webp",
       "membershipLevel": "Bronze",
       "quote": "American Family Restaurant Style Restaurant, Bar & Grill"
     },    
     {
       "businessName": "Century Communities",
-      "address": "2715 S. Shoreline Drive, Syracuse UT 84075",
+      "address": "2715 S. Shore Dr., Syracuse UT 84075",
       "phone": "(385) 345-4993",
       "websiteURL": "https://www.centurycommunities.com/",
-      "logo": "images/CenturyCommunities300x150.jpg",
+      "logo": "images/CenturyCommunities300x150.webp",
       "membershipLevel": "Silver",
       "quote": "It's A Great Time To Buy NEW!!"
     },
@@ -23,7 +23,7 @@
       "address": "976 11th Street, Syracuse, UT 84075",
       "phone": "402-269-2100",
       "websiteURL": "https://www.gosyracusene.com/?portfolio=countryside-bank/",
-      "logo": "images/CountrySideBank300x150.jpg",
+      "logo": "images/CountrySideBank300x150.webp",
       "membershipLevel": "Silver",
       "quote": "Growing Community, Harvesting Success"
     },    
@@ -32,7 +32,7 @@
       "address": "1622 Walnut St., Syracuse, UT, 84075",
       "phone": "(402) 409-2437",
       "websiteURL": "https://www.good-sam.com/locations/syracuse",
-      "logo": "images/GoodSamaritan300x150.jpg",
+      "logo": "images/GoodSamaritan300x150.webp",
       "membershipLevel": "NP",
       "quote": "Find the right care for your senior living needs"
     },
@@ -41,16 +41,16 @@
       "address": "899 W 1700 S., Syracuse, UT 84075",
       "phone": "(801) 825-1606",
       "websiteURL": "https://salons.greatclips.com/us/ut/syracuse/899-w-1700-s",
-      "logo": "images/GreatClips300x150.jpg",
+      "logo": "images/GreatClips300x150.webp",
       "membershipLevel": "Bronze",
       "quote":"Haircuts for Everyone"
     },
     {
-      "businessName": "Rejuvu Day Spa and Beauty Haven",
+      "businessName": "Rejuvu Spa and Beauty Haven",
       "address": "185 N. 2000 W., Syracuse, UT 84075",
       "phone": "(801) 525-8348",
       "websiteURL": "https://www.rejuvudayspa.com//",
-      "logo": "images/Rejuvu300x150.jpg",
+      "logo": "images/Rejuvu300x150.webp",
       "membershipLevel": "Gold",
       "quote": "Back to Self Care"
     },    
@@ -59,7 +59,7 @@
       "address": "1585 W. 300 S., Syracuse, UT 84075",
       "phone": "(801) 825-3655",
       "websiteURL": "https://www.russonmortuary.com/",
-      "logo": "images/Russon300x150.jpg",
+      "logo": "images/Russon300x150.webp",
       "membershipLevel": "Gold",
       "quote": "Our Family serving your family for over 65 years"
     },
@@ -68,7 +68,7 @@
       "address": "2107 W 1700 S, Syracuse UT 84075",
       "phone": "801-825-0191",
       "websiteURL": "https://www.snapfitness.com/us/gyms/syracuse-ut/?utm_source=extnet&utm_medium=yext/",
-      "logo": "images/SnapFitness300x150.jpg",
+      "logo": "images/SnapFitness300x150.webp",
       "membershipLevel": "Silver",
       "quote": "Train With Us!"
     },
@@ -77,25 +77,25 @@
       "address": "1835 W. 2250 S., Syracuse Utah 84075",
       "phone": "(801) 776-4313",
       "websiteURL": "http://syracusedance.com/",
-      "logo": "images/SyracuseDance300x150.jpg",
+      "logo": "images/SyracuseDance300x150.webp",
       "membershipLevel": "Bronze",
       "quote": "We do not teach your student a dance, we teach how to dance!"
     },  
     {
       "businessName": "Syracuse Dental & Implants",
-      "address": "1747 S. Heritage Ln., Syracuse, UT 84075",
+      "address": "17 S. Herin Ln., Syracuse, UT 84075",
       "phone": "801-776-2461",
       "websiteURL": "https://www.syracusedentalandimplants.com/",
-      "logo": "images/SyracuseDental300x150.jpg",
+      "logo": "images/SyracuseDental300x150.webp",
       "membershipLevel": "Silver",
       "quote": "Real Patients, Real Experiences"
     },
     {
       "businessName": "Syracuse Lumber Co.",
-      "address": "503 Mohawk Street, Syracuse, Utah 84075",
+      "address": "503 Mohawk St., Syracuse, Utah 84075",
       "phone": "(402) 269-3221",
       "websiteURL": "https://syracuselumber.com/",
-      "logo": "images/SyracuseLumber300x150.jpg",
+      "logo": "images/SyracuseLumber300x150.webp",
       "membershipLevel": "Silver",
       "quote": "Syracuses destination for lumber and building supply"
     }, 
@@ -104,7 +104,7 @@
       "address": "6484 S. 2000 E., Syracuse, UT 84075",
       "phone": "(801) 479-6060",
       "websiteURL": "https://valleynurseryutah.com/",
-      "logo": "images/ValleyNursery300x150.jpg",
+      "logo": "images/ValleyNursery300x150.webp",
       "membershipLevel": "Gold",
       "quote": "Four Generations growing with Weber County"
     }
