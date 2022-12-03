@@ -1,5 +1,11 @@
 /*///////index///////////*/
 
+body {
+  width: 1000px;
+  margin: auto;
+  align-content: center;
+}
+
 header{
     background-color: #1C7377;
 }
