@@ -6,17 +6,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Syracuse Chamber of Commerce</title>
   <meta name="description" content="Syracuse Chamber of Commerce website assignment for WDD 230: Web Frontend Development">
-  <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="styles/small.css" rel="stylesheet">
   <!-- <link href="styles/medium.css" rel="stylesheet">
   <link href="styles/large.css" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Blinker&family=Marcellus&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Sup?</h1>
+  <header>
+    <div class="titlehead">
+      <figure>
+      <img  class= "headerlogo"src="images/logo75x75.jpg" alt="Bountiful Foods logo"
+      srcset="images/logo75x75.jpg 1x, images/logo150x150.jpg 2x, images/logo300x300.jpg 3x">
+    </figure>
+    <h1 class="titlecontent title">Bountiful Foods</h1>
+    <figure class="titlecontent social" >
+      <img src="images/facebook100.png" alt="Facebook icon">
+      <img src="images/linkedin100.png" alt="Linkedin icon">
+      <img src="images/twitter30x30.png" alt="Twitter icon">
+    </figure>
+    </div>
+      <nav>
+        <button id="hamButton" class="titlecontent"><span>&#9776;</span><span>X</span></button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    <div><span id="currentdate"></span></div>
+  </header>
+  <section>
+    <picture>
+      <img src="images/hero1200x396.jpg" alt="Picture of different types of fruit">
+    </picture>
+    <h1>High Quality Fruits and Drinks</h1>
+    <div>
+      <h2>Bountiful Foods</h2>
+      <h3>7660 El Camino Real, Carlsbad, CA 92009</h3>
+      <h3>(760) 632-7511</h3>
+    </div>
+    <button id="heroButton"><span>Place Your Order</span></button>
+  </section>
+  <section>
+    <picture>
+      <img src="images/strawberries375x275.jpg" loading="lazy" alt="Picture of strawberries">
+    </picture>
+    <p>Make it your own! Chose up to 3 fruits. You can blend 3 of the same fruit, or mix things 
+      up and create your very own juice blend!
+      There are a wide variety of freshly picked, nutritious fruits to chose from. Order
+      your specialty juice 
+      today! </p>
+    <picture>
+      <img src="images/greengrapes375x275.jpg" loading="lazy" alt="Picture of greengrapes">
+    </picture>
+  </section>
+  <section>
+    <p>The Current Temperature Is </p>
+    <p><span class="currentTemp"></span></p>
+    <p><strong><span id="currentCond"></span></strong></p>
+    <p>Humidity: <span id="windspeed"></span></p>
+    <p>3 Day Forcast: <span id="forecast"></span> </p>
+  </section>
+  <section>
+    <p>Types of Drinks</p>
+    <button class="createDrinks"><span>Create Your Drinks</span></button>
+  </section>
+  <section>
+    <picture class="logo">
+      <img class="logoImg" src="images/orangeJuice350x400.jpg" loading= "lazy" alt="Bountiful Foods logo">
+    </picture>
+    <picture class="logo">
+      <img class="logoImg" src="images/juices350x400.jpg" loading= "lazy" alt="Bountiful Foods logo">
+    </picture>
+    <picture class="logo">
+      <img class="logoImg" src="images/melonJuice350x400.jpg" loading= "lazy" alt="Bountiful Foods logo">
+    </picture>
+  </section>
+  <section>
+    <picture>
+      <img src="images/MapOfCalifornia500x400.jpg" loading="lazy" alt="Map of California">
+    </picture>
+    <h3>Santa Monica Pier and Beach</h3>
+    <p>Located 13.2 miles to the city center, the Santa Monica Pier contains one
+      of the most legendary beach scenes in the United States. There you will find 
+      an abundance of restaurants, must see spots and bike paths. One such path is 
+      The Strand, which extends for 22 miles taking riders through Marina del Rey, 
+      Playa del Rey, and Venice, Manhattan, Hermosa, and Redondo beaches.
+    </p>
+  </section>
+  <footer>
+    <figure>
+      <img src="images/logo75x75.jpg" alt="Bountiful Foods logo">
+    </figure>
+    <h2>Bountiful <br> Foods</h2>
+    <p> located at:<br> 7660 El Camino Real, Carlsbad, CA 92009<br> (760) 632-7511 </p>
+    <p>References</p>
+    <p>About Us</p>
+
+  </footer>
+
+  
+
+  
 
 </body>
 </html>
