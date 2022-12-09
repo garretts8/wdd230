@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="styles/small.css" rel="stylesheet">
-  <!-- <link href="styles/medium.css" rel="stylesheet">
-  <link href="styles/large.css" rel="stylesheet"> -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Blinker&family=Marcellus&display=swap" rel="stylesheet">
@@ -30,88 +30,110 @@
     </figure>
     </div>
       <nav>
-        <button id="hamButton" class="titlecontent"><span>&#9776;</span><span>X</span></button>
-        <ul>
+        <button id="hambtn"><span>&#9776;</span><span>X</span></button>
+        <!-- <button id="hamButton" class="titlecontent"><span>&#9776;</span><span>X</span></button> -->
+        <ul id="primNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="fresh.html">Fresh</a></li>
           <li><a href="aboutUs.html">About Us</a></li>
         </ul>
       </nav>
-    <div><span id="currentdate"></span></div>
+    <div class="dateContainer"><span id="currentdate"></span></div>
   </header>
-  <section>
-    <picture>
-      <img src="images/hero1200x396.jpg" alt="Picture of different types of fruit">
-    </picture>
-    <h1>High Quality Fruits and Drinks</h1>
-    <div>
-      <h2>Bountiful Foods</h2>
-      <h3>7660 El Camino Real, Carlsbad, CA 92009</h3>
-      <h3>(760) 632-7511</h3>
+  <main class="indexMain">
+    <section class="heroContainer">
+      <picture class="heropic">
+        <img class="heroimg" src="images/hero559x183.jpg" alt="Picture of different types of fruit"
+        sizes="100vw"
+        srcset = "images/hero559x183.jpg 559w,
+        images/hero911x299.jpg 911px,
+        images/hero1200x396.jpg 1200w">
+      </picture>
+      <h1 class="heroTitle"><em>High Quality Fruits <br> and Drinks</em></h1>
+      <div class="heroaddress">
+        <h2 class="addTitle">Bountiful Foods</h2>
+        <h3 class="heroAddress">7660 El Camino Real, Carlsbad, CA 92009 <br>(760) 632-7511</h3>
+      </div>
+      <button class="herobtn" type="submit" onclick="window.location.href='fresh.html';">Place Your Order</button>
+    </section >
+    <section class="fruitContainer">
+      <picture class="fruitContent">
+        <img src="images/strawberries300x250.jpg" loading="lazy" alt="Picture of strawberries">
+      </picture>
+      <div class="fruitContent fruitpara">
+        <h3>Freshly Grown</h3>
+        <p>Our fruits are the finest, locally grown, farm fresh fruits around. Each fruit is packed full
+          of much needed vitamins and fiber. We also provide a wide selection of specialty fruits you can 
+          chose from.</p>
+      </div>
+      <picture class="fruitContent">
+        <img src="images/greengrapes300x250.jpg" loading="lazy" alt="Picture of greengrapes">
+      </picture>
+    </section>
+
+
+
+    <section class="weatherContainer">
+      <div class="weatherContent weatherAPI">
+        <p>The Current Temperature Is </p>
+        <p><span class="currentTemp"></span></p>
+        <p><strong><span id="currentCond"></span></strong></p>
+        <p>Humidity: <span id="windspeed"></span></p>
+        <p>3 Day Forcast: <span id="forecast"></span> </p>
+      </div>
+      
+    </section>
+
+    <section class="drinkContainer">
+      <div class="weatherContent">
+        <h3>Make it your own!</h3>
+        <p >Make it your own! Chose up to 3 fruits. You can blend 3 of the same fruit, or mix things 
+        up and create your very own juice blend!
+        There are a wide variety of freshly picked, nutritious fruits to chose from. Order
+        your specialty juice 
+        today! </p>
+        <button class="createbtn" type="submit" onclick="window.location.href='fresh.html';"><span>Create Your Drinks</span></button>
+      </div>
+      <div class="drinks">
+      <picture class="drinkImg">
+        <img src="images/orange250x285.jpg" loading="lazy" alt="Bountiful Foods logo">
+      </picture>
+      <picture class="drinkImg">
+        <img src="images/multiplejuices250x285.jpg" loading="lazy" alt="Bountiful Foods logo">
+      </picture>
+      <picture class="drinkImg">
+        <img src="images/watermelon250x285.jpg" loading="lazy" alt="Bountiful Foods logo">
+      </picture>
     </div>
-    <button id="heroButton"><span>Place Your Order</span></button>
-  </section>
-  <section>
-    <picture>
-      <img src="images/strawberries375x275.jpg" loading="lazy" alt="Picture of strawberries">
-    </picture>
-    <p>Make it your own! Chose up to 3 fruits. You can blend 3 of the same fruit, or mix things 
-      up and create your very own juice blend!
-      There are a wide variety of freshly picked, nutritious fruits to chose from. Order
-      your specialty juice 
-      today! </p>
-    <picture>
-      <img src="images/greengrapes375x275.jpg" loading="lazy" alt="Picture of greengrapes">
-    </picture>
-  </section>
-  <section>
-    <p>The Current Temperature Is </p>
-    <p><span class="currentTemp"></span></p>
-    <p><strong><span id="currentCond"></span></strong></p>
-    <p>Humidity: <span id="windspeed"></span></p>
-    <p>3 Day Forcast: <span id="forecast"></span> </p>
-  </section>
-  <section>
-    <p>Types of Drinks</p>
-    <button class="createDrinks"><span>Create Your Drinks</span></button>
-  </section>
-  <section>
-    <picture class="logo">
-      <img class="logoImg" src="images/orangeJuice350x400.jpg" loading= "lazy" alt="Bountiful Foods logo">
-    </picture>
-    <picture class="logo">
-      <img class="logoImg" src="images/juices350x400.jpg" loading= "lazy" alt="Bountiful Foods logo">
-    </picture>
-    <picture class="logo">
-      <img class="logoImg" src="images/melonJuice350x400.jpg" loading= "lazy" alt="Bountiful Foods logo">
-    </picture>
-  </section>
-  <section>
-    <picture>
-      <img src="images/MapOfCalifornia500x400.jpg" loading="lazy" alt="Map of California">
-    </picture>
-    <h3>Santa Monica Pier and Beach</h3>
-    <p>Located 13.2 miles to the city center, the Santa Monica Pier contains one
-      of the most legendary beach scenes in the United States. There you will find 
-      an abundance of restaurants, must see spots and bike paths. One such path is 
-      The Strand, which extends for 22 miles taking riders through Marina del Rey, 
-      Playa del Rey, and Venice, Manhattan, Hermosa, and Redondo beaches.
-    </p>
-  </section>
-  <footer>
-    <figure>
+    </section>
+
+
+    <section class="mapContainer">
+      <picture class="mapContent">
+        <img src="images/MapOfCalifornia500x400.jpg" loading="lazy" alt="Map of California">
+      </picture>
+      <div class="mapContent">
+        <h3>Santa Monica Pier and Beach</h3>
+        <p>Located 13.2 miles to the city center, the Santa Monica Pier contains one
+        of the most legendary beach scenes in the United States. There you will find 
+        an abundance of restaurants, must see spots and bike paths. One such path is 
+        The Strand, which extends for 22 miles taking riders through Marina del Rey, 
+        Playa del Rey, and Venice, Manhattan, Hermosa, and Redondo beaches.
+        </p>
+      </div>
+      
+    </section>
+  </main>
+  <footer >
+    <figure class="footerContent">
       <img src="images/logo75x75.jpg" alt="Bountiful Foods logo">
     </figure>
-    <h2>Bountiful <br> Foods</h2>
-    <p> located at:<br> 7660 El Camino Real, Carlsbad, CA 92009<br> (760) 632-7511 </p>
-    <p>References</p>
-    <p>About Us</p>
-
-  </footer>
-
-  
-
-  
-
+    <h2 class="footerContent">Bountiful <br> Foods</h2>
+    <p class="footerContent"> located at:<br> 7660 El Camino Real, <br>Carlsbad, CA 92009<br> (760) 632-7511 </p>
+    <p class="footerContent">References</p>
+    <p class="footerContent">About Us</p>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>

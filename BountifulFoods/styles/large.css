@@ -1,0 +1,20 @@
+@media only screen and (min-width: 57rem) {
+  li a {
+    padding: .5rem 1rem;
+
+  }
+  
+  nav button {
+    display: none;
+  }
+
+  nav ul#primNav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin-left: 2vw; */
+    border-left: 1px solid #1C7377;
+    text-align: center;
+    border-top: none;
+  }
+  
+}
