@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syracuse Chamber of Commerce</title>
-  <meta name="description" content="Syracuse Chamber of Commerce website assignment for WDD 230: Web Frontend Development">
+  <title>Bountiful Foods</title>
+  <meta name="description" content="Bountiful Foods Home Page for WDD 230: Web Frontend Development">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="styles/small.css" rel="stylesheet">
@@ -19,19 +19,18 @@
   <header>
     <div class="titlehead">
       <figure>
-      <img  class= "headerlogo"src="images/logo75x75.jpg" alt="Bountiful Foods logo"
-      srcset="images/logo75x75.jpg 1x, images/logo150x150.jpg 2x, images/logo300x300.jpg 3x">
+      <a href="index.html"><img  class= "headerlogo"src="images/logo75x75.jpg" alt="Bountiful Foods logo"
+      srcset="images/logo75x75.jpg 1x, images/logo150x150.jpg 2x, images/logo300x300.jpg 3x"></a>
     </figure>
     <h1 class="titlecontent title">Bountiful Foods</h1>
     <figure class="titlecontent social" >
-      <img src="images/facebook100.png" alt="Facebook icon">
-      <img src="images/linkedin100.png" alt="Linkedin icon">
-      <img src="images/twitter30x30.png" alt="Twitter icon">
+      <a href="https://www.facebook.com/"><img src="images/facebook100.png" alt="Facebook icon"></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin100.png" alt="Linkedin icon"></a>
+      <a href="https://twitter.com/"><img src="images/twitter30x30.png" alt="Twitter icon"></a>
     </figure>
     </div>
       <nav>
         <button id="hambtn"><span>&#9776;</span><span>X</span></button>
-        <!-- <button id="hamButton" class="titlecontent"><span>&#9776;</span><span>X</span></button> -->
         <ul id="primNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="fresh.html">Fresh</a></li>
@@ -46,7 +45,7 @@
         <img class="heroimg" src="images/hero559x183.jpg" alt="Picture of different types of fruit"
         sizes="100vw"
         srcset = "images/hero559x183.jpg 559w,
-        images/hero911x299.jpg 911px,
+        images/hero911x299.jpg 911w,
         images/hero1200x396.jpg 1200w">
       </picture>
       <h1 class="heroTitle"><em>High Quality Fruits <br> and Drinks</em></h1>
@@ -57,7 +56,7 @@
       <button class="herobtn" type="submit" onclick="window.location.href='fresh.html';">Place Your Order</button>
     </section >
     <section class="fruitContainer">
-      <picture class="fruitContent">
+      <picture class="fruitContent strawberry">
         <img src="images/strawberries300x250.jpg" loading="lazy" alt="Picture of strawberries">
       </picture>
       <div class="fruitContent fruitpara">
@@ -66,24 +65,24 @@
           of much needed vitamins and fiber. We also provide a wide selection of specialty fruits you can 
           chose from.</p>
       </div>
-      <picture class="fruitContent">
+      <picture class="fruitContent greengrapes">
         <img src="images/greengrapes300x250.jpg" loading="lazy" alt="Picture of greengrapes">
       </picture>
     </section>
-
-
-
-    <section class="weatherContainer">
-      <div class="weatherContent weatherAPI">
-        <p>The Current Temperature Is </p>
-        <p><span class="currentTemp"></span></p>
-        <p><strong><span id="currentCond"></span></strong></p>
-        <p>Humidity: <span id="windspeed"></span></p>
-        <p>3 Day Forcast: <span id="forecast"></span> </p>
+    <section class="weather">
+      <h1 class="townWeather">Carlsbad, California</h1>
+      <div class="weatherContainer container1">
+        <div class="weatherContent weathertoday">
+          <h2 class="currentTemp"></h2>
+          <p class="condition">Condition: <strong><span class="currentCond"></span></strong></p>
+          <p class="weatherIcon"></p>
+          <p class="humidity">Humidity: <span class="currentHum"></span></p>
+        </div>        
+        <div class="threeDay weatherContent"> 
+          <h2 class=" threeTitle">3 Day Forecast</h2>
+        </div>
       </div>
-      
     </section>
-
     <section class="drinkContainer">
       <div class="weatherContent">
         <h3>Make it your own!</h3>
@@ -95,24 +94,22 @@
         <button class="createbtn" type="submit" onclick="window.location.href='fresh.html';"><span>Create Your Drinks</span></button>
       </div>
       <div class="drinks">
-      <picture class="drinkImg">
+      <picture class="drinkImg orange">
         <img src="images/orange250x285.jpg" loading="lazy" alt="Bountiful Foods logo">
       </picture>
       <picture class="drinkImg">
         <img src="images/multiplejuices250x285.jpg" loading="lazy" alt="Bountiful Foods logo">
       </picture>
-      <picture class="drinkImg">
+      <picture class="drinkImg waterMelon">
         <img src="images/watermelon250x285.jpg" loading="lazy" alt="Bountiful Foods logo">
       </picture>
     </div>
     </section>
-
-
     <section class="mapContainer">
-      <picture class="mapContent">
-        <img src="images/MapOfCalifornia500x400.jpg" loading="lazy" alt="Map of California">
+      <picture class="mapContent ">
+        <img class="mapImg" src="images/MapOfCalifornia500x400.jpg" loading="lazy" alt="Map of California">
       </picture>
-      <div class="mapContent">
+      <div class="mapContent mapInfo">
         <h3>Santa Monica Pier and Beach</h3>
         <p>Located 13.2 miles to the city center, the Santa Monica Pier contains one
         of the most legendary beach scenes in the United States. There you will find 
@@ -121,19 +118,23 @@
         Playa del Rey, and Venice, Manhattan, Hermosa, and Redondo beaches.
         </p>
       </div>
-      
     </section>
   </main>
   <footer >
-    <figure class="footerContent">
+    <div>
+      <figure class="footerContent">
       <img src="images/logo75x75.jpg" alt="Bountiful Foods logo">
-    </figure>
-    <h2 class="footerContent">Bountiful <br> Foods</h2>
-    <p class="footerContent"> located at:<br> 7660 El Camino Real, <br>Carlsbad, CA 92009<br> (760) 632-7511 </p>
-    <p class="footerContent">References</p>
-    <p class="footerContent">About Us</p>
+      </figure>
+      <h2 class="footerContent">Bountiful <br> Foods</h2>
+      <p class="footerContent"> Located at:<br> 7660 El Camino Real, <br>Carlsbad, CA 92009<br> (760) 632-7511 </p>
+    </div>
+    <div>
+      <p class="footerContent2 references"><a href="references.html">References</a></p>
+      <p class="footerContent2 aboutUs"><a href="aboutUs.html">About Us</a></p>
+    </div>
     </footer>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

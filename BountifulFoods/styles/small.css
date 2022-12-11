@@ -1,3 +1,8 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 body {
   max-width: 1200px;
   min-width: 350px;
@@ -68,6 +73,7 @@ nav ul {
   margin: 0px;
   display: none;
   border-left: 1px solid  #1C7377;
+  border-bottom: 1px solid  #1C7377;
 }
 
 nav ul.open{
@@ -76,14 +82,15 @@ nav ul.open{
 
 li a {
   text-decoration: none;
-  color: #1C7377;
+  color: #0d3233;
+  font-size: 18px;
   padding: .8rem 2vw;
   display: block;
   padding: .8rem 2vw;
   border-top: 1px solid #1C7377;
 }
 
-a:hover {
+ nav a:hover {
   background-color: #FFF7E1;
 }
 
@@ -100,15 +107,49 @@ main {
 
 footer {
   background-color:#1C7377;
-  display: flex;
+  display: block;
   margin: 10px 0px;
   justify-content: center;
   align-items: center;
 }
 
+footer div {
+  display: flex;
+}
+
 .footerContent {
   flex: 1 1 100%;
+  padding: 5px;
 }
+
+.footerContent2 {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.references a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+
+.references a:hover {
+  background-color: #FFF7E1;
+  color: #0d3233;
+}
+
+.aboutUs a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.aboutUs a:hover {
+  background-color: #FFF7E1;
+  color: #0d3233;
+}
+
 
 #hambtn span:nth-child(1) {
   display: block;
@@ -131,7 +172,8 @@ footer {
 .heroContainer {
   position: relative;
   padding-top: 5px;
-  margin: 2.5px 0;
+  
+  
 }
  
 .heroimg {
@@ -143,7 +185,7 @@ footer {
 .heroTitle {
   position: absolute;
   top: 15%;
-  right: 10%;
+  right: 40%;
   background-color: #ADD8CF;
   color: black;
   font-weight: bolder;
@@ -153,48 +195,53 @@ footer {
   border-radius: 20px;
   box-shadow: 10px 10px 10px #000;
   opacity: .8;
+  font-size: 1.5rem;
 }
 
 .heroaddress {
+  display: none;
+}
+/* .heroaddress {
   position: absolute;
   top: 9%;
   left: 5%;
   background-color: #ADD8CF;
   padding: 15px;
   text-align: center;
-  color: #1C7377;
+  color: #0d3233;
   width: 15%;
   box-shadow: 10px 10px 10px #000;
   opacity: 0.9;
   border-radius: 5px;
-}
+} */
 
 .herobtn {
   position: absolute;
   right: 4%;
-  top: 70%;
-  padding: 15px;
+  top: 65%;
+  padding: 10px;
+  width: 150px;
   border-radius: 25px;
   box-shadow: 10px 10px 10px #000;
   background-color: #ADD8CF;
+  font-weight: 600;
 }
 
-.addTitle {
+/* .addTitle {
   border-bottom: 1px solid #1C7377;
   margin: 0px;
   padding: 0px;
-}
+} */
 
-.heroAddress{
+/* .heroAddress{
   border-bottom: none;
   background: none;
-}
+} */
 
 .fruitContainer {
-  display: flex;
+  display: block;
   text-align: center;
   margin: 2.5px 0;
-  
 }
 
 .fruitContent {
@@ -202,38 +249,76 @@ footer {
  }
 
  .fruitpara {
-  padding: 5
-  px;
- }
-
- .weatherContainer {
-  display: flex;
-  margin-top: 2.5px;
-
- }
-
- .weatherContent {
-  flex: 1 1 100%;
   padding: 5px;
  }
 
- .createDrinks {
+ .strawberry {
+  display: none;
+ }
+ 
+ .weather {
+  background-color: #ADD8CF;
+  padding: 5px;
+ }
+
+ .townWeather {
+  text-align: center;
+ }
+
+.weatherContainer {
+  display: flex;
+}
+
+.weatherContent {
+  flex: 1 1 100%;
+}
+
+.foreContainer {
+  display: flex;
+}
+
+.foreContainer1 {
+  flex: 1 1 100%;
+  border: 2px solid white;
+  padding: 7px;
+}
+
+.foreContent {
+  align-content: center;
+}
+
+.weathertoday {
+  padding: 3% 0px;
+  /* border: 2px solid white; */
+  text-align: center;
+  
+}
+
+.threeTitle {
+  text-align: center;
+}
+
+.townWeather {
+  color:#0d3233;
+}
+
+.createDrinks {
   padding: 15px;
   border-radius: 25px;
   box-shadow: 10px 10px 10px #000;
   background-color: #FFCD62;
  }
 
- .createbtn {
+.createbtn {
   padding: 15px;
   border-radius: 25px;
   box-shadow: 10px 10px 10px #000;
   background-color: #ADD8CF;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 200px;
 }
 
-.weatherAPI {
-  background-color: #ADD8CF;
-}
 
 .drinkContainer {
   margin: 2.5px 0;
@@ -245,35 +330,66 @@ footer {
 }
 
 .drinkImg {
-  padding: 5px;
-  margin-left: 5%;
+  flex:1 1 auto;
+  align-items: center;
+  /* padding: 5px;
+  margin-left: 5%; */
+  /* margin-right: auto; */
+}
+
+.drinkImg img {
+  margin-left: 27%;
   margin-right: auto;
+  width: 50%
+}
+
+.orange {
+  display: none;
+}
+
+.waterMelon {
+  display: none;
 }
 
 .mapContainer{
-  display: flex;
+  display: block;
   margin: 5px 0;
 }
 
 .mapContent {
   flex: 1 1 100%;
-  background-color: #ADD8CF;
+  /* background-color: #ADD8CF; */
   padding: 15px;
 }
 
+.mapImg {
+  width: 95%;
+  margin: 10px;
 
-
-/* .heropic {
-  grid-column: 1/4;
-  grid-row: 1/2;
 }
 
-.strawpic {
-  grid-column: 1/2;
-  grid-row: 2/3;
+.mapInfo {
+  margin: 5px;
+  background-color: #ADD8CF;
 }
 
-.fruitComment {
-  grid-column: 2/3;
-  grid-row: 2/3;
-} */
+/*//////////References////////// */
+
+.references {
+  text-align: center;
+  color:#0d3233;
+}
+
+.mainreference a {
+  text-decoration: none;
+  color:#0d3233; 
+  padding: 5px;
+}
+
+.mainreference a:hover {
+  background-color: #FFF7E1;
+}
+
+/*//////////Fresh//////////*/
+
+

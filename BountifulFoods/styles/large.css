@@ -16,5 +16,64 @@
     text-align: center;
     border-top: none;
   }
+
+  .greengrapes {
+    display: flex;
+  }
+
+  .waterMelon {
+    display: flex;
+  }
+
+  .heroaddress {
+    display: inline;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    background-color: #ADD8CF;
+    padding: 10px;
+    text-align: center;
+    color: #0d3233;
+    width: 15%;
+    box-shadow: 10px 10px 10px #000;
+    opacity: 0.9;
+    border-radius: 5px;
+    width: 20%;
+  }
+
+  .addTitle {
+    border-bottom: 1px solid #1C7377;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .heroAddress{
+    border-bottom: none;
+    background: none;
+  }
+
+  .heroTitle {
+    right: 15%;
+    width: 41%;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .herobtn {
+    right: 4%;
+    top: 70%;
+  }
+
+  /* .mapContainer{
+    display: flex;
+  }
+
+  .mapContent {
+    flex: 1 1 auto;
+    background-color: #ADD8CF;
+    padding: 15px;
+  } */
+
+
   
 }
