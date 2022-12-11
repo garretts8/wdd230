@@ -39,24 +39,45 @@
       </nav>
     <div class="dateContainer"><span id="currentdate"></span></div>
   </header>
-  <main>
+  <body>
+    <main>
+      <h1>Complete Your Order!</h1>
+      <form class="orderForm" method="get" ></form>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label class="info">First Name* <input type="text" name="fname" required></label>
+        <label class="info">Last Name* <input type="text" name="lname" required></label>
+        <label class="info">Email Address* <input type="email" name="email" placeholder= "someone@gmail.com" required></label>
+        <label class="info">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+      </fieldset>
+      <input type="submit" value="Place your Order" class="submitBtn">
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Select Your Item</legend>
+        <label class="order" name="fruits">Select 3 fruits:</label>
+        <select id="select" name="order" size="3">
+          
+        </select>
 
-  </main>
-  <footer >
-    <div>
-      <figure class="footerContent">
-      <img src="images/logo75x75.jpg" alt="Bountiful Foods logo">
-      </figure>
-      <h2 class="footerContent">Bountiful <br> Foods</h2>
-      <p class="footerContent"> Located at:<br> 7660 El Camino Real, <br>Carlsbad, CA 92009<br> (760) 632-7511 </p>
-    </div>
-    <div>
-      <p class="footerContent2 references"><a href="references.html">References</a></p>
-      <p class="footerContent2 aboutUs"><a href="aboutUs.html">About Us</a></p>
-    </div>
-    </footer>
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/date.js"></script>
-    <script src="scripts/weather.js"></script>
+      </fieldset>
+
+    </main>
+    <footer >
+      <div>
+        <figure class="footerContent">
+        <img src="images/logo75x75.jpg" alt="Bountiful Foods logo">
+        </figure>
+        <h2 class="footerContent">Bountiful <br> Foods</h2>
+        <p class="footerContent"> Located at:<br> 7660 El Camino Real, <br>Carlsbad, CA 92009<br> (760) 632-7511 </p>
+      </div>
+      <div>
+        <p class="footerContent2 references"><a href="references.html">References</a></p>
+        <p class="footerContent2 aboutUs"><a href="aboutUs.html">About Us</a></p>
+      </div>
+      </footer>
+      <script src="scripts/navigation.js"></script>
+      <script src="scripts/date.js"></script>
+      <script src="scripts/order.js"></script>
+      <!-- <script src="scripts/weather.js"></script> -->
 </body>
 </html>
