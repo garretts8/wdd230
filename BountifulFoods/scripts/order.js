@@ -20,7 +20,7 @@ const mail = document.querySelector(".mail");
 const phone = document.querySelector(".phone");
 const ph = document.querySelector(".ph");
 const fruitsSelected = document.querySelector(".fruitsSelected");
-const textArea = document.querySelector("#textArea");
+const textArea = document.querySelector(".textArea");
 const special = document.querySelector(".special");
 
 
@@ -125,7 +125,7 @@ function orderList(items) {
     mail.innerHTML =  email.value;
     ph.innerHTML =  phone.value;
     fruitsSelected.innerHTML =  `Fruits Ordered: ${order1.value},  ${order2.value},  ${order3.value}`;
-    special.innerHTML = textArea.value;
+    special.innerHTML = `Special Instructions: "${textArea.value}"`;
     orderTitle.innerHTML = `Your Order has been processed!`
     totCarbs.innerHTML = `Total Carbohydrates: ${+carb1 + +carb2 + +carb3}g`;
     totProteins.innerHTML = `Total Proteins: ${+pro1 + +pro2 + +pro3}g`;
