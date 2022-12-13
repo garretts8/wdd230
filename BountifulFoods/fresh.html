@@ -37,7 +37,7 @@
           <li><a href="aboutUs.html">About Us</a></li>
         </ul>
       </nav>
-    <div class="dateContainer"><span id="currentdate"></span></div>
+    <div class="dateContainer"><span class="currentdate"></span></div>
   </header>
   <body>
     <main>
@@ -45,21 +45,54 @@
       <form class="orderForm" method="get" ></form>
       <fieldset>
         <legend>Contact Information</legend>
-        <label class="info">First Name* <input type="text" name="fname" required></label>
-        <label class="info">Last Name* <input type="text" name="lname" required></label>
-        <label class="info">Email Address* <input type="email" name="email" placeholder= "someone@gmail.com" required></label>
-        <label class="info">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+        <label class="info firsName">First Name* <input class="firName" type="text" name="fname" required></label>
+        <label class="info">Last Name* <input class="lname" type="text" name="lname" required></label>
+        <label class="info">Email Address* <input class="email" type="email" name="email" placeholder= "someone@gmail.com" required></label>
+        <label class="info">Phone* <input class="phone" type="tel" name="phone" placeholder="1235551234" required></label>
       </fieldset>
-      <input type="submit" value="Place your Order" class="submitBtn">
+      <!-- <input type="submit" value="Place your Order" class="submitBtn"> -->
       </fieldset>
       <fieldset class="fieldset">
-        <legend>Select Your Item</legend>
-        <label class="order" name="fruits">Select 3 fruits:</label>
-        <select id="select" name="order" size="3">
-          
-        </select>
-
+        <legend>Make Your Selection</legend>
+        <!-- <label class="order" name="fruits">Select 3 fruits:</label> -->
+        <select id="select" name="order" size="3"></select>
+        <button class="addBtn" type="submit">Add Fruit</button>
+      
+      
+      <div class="input">
+        <label>Select 3 Fruits<br>
+          <!-- <input type="text" id="favchap" placeholder="Add Fruit" required></label> -->
+        <!-- <button type="submit">Add Chapter</button> -->
+      </div>
+      <div class="listcontainer">
+        <ol class="list">
+          <li class="order1"><input type="text" id="order1" placeholder="Add Fruit" required></label></li>
+          <li class="order2"><input type="text" id="order2" placeholder="Add Fruit" required></label></li>
+          <li class="order3"><input type="text" id="order3" placeholder="Add Fruit" required></label></li>
+        </ol>
+        <label  class="top" for="textArea">Add Special Instructions For Drink Preparation</label>
+          <textarea id="textArea" name="msg" maxlength="140" rows="5"></textarea>
+        <button class="orderBtn" type="submit">Place Your Order</button>
       </fieldset>
+    </div>
+    <div class="orderDiv">
+        <h2 class="orderTitle"></h2>
+        <p class="day"></p>
+        <p class="firstname"></p>
+        <p class="mail"></p>
+        <p class="ph"></p>
+        <p class="fruitsSelected"></p>
+        <p class="totCarbs"></p>
+        <p class="totProteins"></p>
+        <p class="totFats"></p>
+        <p class="totSugar"></p>
+        <p class="totCal"></p>
+
+
+       
+       
+        <!-- <label class="info"><input type="text" name="fname" required></label> -->
+    </div>
 
     </main>
     <footer >
