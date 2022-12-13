@@ -12,7 +12,7 @@ const totSugar = document.querySelector(".totSugar");
 const totCal = document.querySelector(".totCal");
 const orderTitle = document.querySelector(".orderTitle");
 const orderDiv = document.querySelector(".orderDiv");
-const day = document.querySelector(".day");
+const date_Time = document.querySelector(".date");
 const firstname = document.querySelector(".firstname");
 const firName = document.querySelector(".firName");
 const email = document.querySelector(".email");
@@ -20,7 +20,8 @@ const mail = document.querySelector(".mail");
 const phone = document.querySelector(".phone");
 const ph = document.querySelector(".ph");
 const fruitsSelected = document.querySelector(".fruitsSelected");
-
+const textArea = document.querySelector("#textArea");
+const special = document.querySelector(".special");
 
 
 const url = "https://brotherblazzard.github.io/canvas-content/fruit.json"
@@ -105,8 +106,6 @@ function orderList(items) {
       sugar3 = `${parseFloat(items.nutritions.sugar)}`;
     }
 
-  
-
     console.log(+pro1 + +pro2 + +pro3);
     console.log(+carb1 + +carb2 + +carb3);
     console.log(+fat1 + +fat2 + +fat3);
@@ -114,19 +113,19 @@ function orderList(items) {
     console.log(+sugar1 + +sugar2 + +sugar3); 
     console.log(+cal1 + +cal2 + +cal3);
 
-    
-    const now = new Date();
-    console.log(now);
-    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-    day.innerHTML = `<em>${fulldate}</em>`;
+    let today = new Date();
+    console.log(today);
+    let date = (today.getMonth()+1) + '-' + today.getDate() + '-' + today.getFullYear();
+    let time = today.getHours() + ":" + today.getMinutes();
+    let ampm = today.getHours() >= 12 ? 'PM' : 'AM';
+    let dateTime = date+' '+time+' '+ampm;
 
-      
+    date_Time.innerHTML = dateTime;
     firstname.innerHTML =  firName.value;
     mail.innerHTML =  email.value;
     ph.innerHTML =  phone.value;
     fruitsSelected.innerHTML =  `Fruits Ordered: ${order1.value},  ${order2.value},  ${order3.value}`;
-    
-
+    special.innerHTML = textArea.value;
     orderTitle.innerHTML = `Your Order has been processed!`
     totCarbs.innerHTML = `Total Carbohydrates: ${+carb1 + +carb2 + +carb3}g`;
     totProteins.innerHTML = `Total Proteins: ${+pro1 + +pro2 + +pro3}g`;
