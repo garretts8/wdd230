@@ -63,16 +63,16 @@
     right: 4%;
     top: 70%;
   }
-
-  /* .mapContainer{
+  
+  .mapContainer {
     display: flex;
+    background-color: #FFF7E1;;
   }
-
-  .mapContent {
-    flex: 1 1 auto;
-    background-color: #ADD8CF;
-    padding: 15px;
-  } */
+  
+  .mapItems {
+    padding: 10px;
+    flex: 1 1 100%;
+  }
 
 
   

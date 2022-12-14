@@ -353,23 +353,25 @@ footer div {
 
 .mapContainer{
   display: block;
-  margin: 5px 0;
+  /* margin: 5px 0; */
 }
 
 .mapContent {
   flex: 1 1 100%;
   /* background-color: #ADD8CF; */
-  padding: 15px;
+  padding-right: 20px;
 }
 
 .mapImg {
-  width: 95%;
-  margin: 10px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
 .mapInfo {
-  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ADD8CF;
 }
 
@@ -426,7 +428,7 @@ label.info input {
   padding: 0.75rem;
   color: #555;
   width: 100%;
-  max-width: 20rem;
+  max-width: 28rem;
   background-color: rgba( 0,0,0,0.1);
   box-sizing: border-box;
 }
@@ -462,6 +464,50 @@ textarea {
   border-radius: 4px;
   padding: 0.75rem;
   color: #555;
-  width: 45%;
+  width:28rem;
   background-color: rgba( 0,0,0,0.1);
 }
+
+/*//////////About Us//////////*/
+
+.aboutTitle, .mapLocation {
+  text-align: center;
+  color: #0d3233; 
+}
+
+.beachPic {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mapContainer {
+  display: block;
+  background-color: #ADD8CF;
+  padding: 15px; 
+  align-items: center;
+  margin: auto;
+}
+
+.mapImg{
+margin-left:auto;
+margin-right: auto;
+width: 98%;
+padding: 5px;
+/* background-color: none; */
+}
+
+.locationPara {
+  text-decoration: none;
+  color: #0d3233;
+}
+
+.locationPara p:hover {
+  background-color: #ADD8CF;
+}
+
+.mapLocation {
+  margin-left: auto;
+  
+}
+

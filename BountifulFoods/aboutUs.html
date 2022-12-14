@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bountiful Foods</title>
+  <meta name="description" content="Bountiful Foods About Us Page for WDD 230: Web Frontend Development">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Blinker&family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="titlehead">
+      <figure>
+      <a href="index.html"><img  class= "headerlogo"src="images/logo75x75.jpg" alt="Bountiful Foods logo"
+      srcset="images/logo75x75.jpg 1x, images/logo150x150.jpg 2x, images/logo300x300.jpg 3x"></a>
+    </figure>
+    <h1 class="titlecontent title">Bountiful Foods</h1>
+    <figure class="titlecontent social" >
+      <a href="https://www.facebook.com/"><img src="images/facebook100.png" alt="Facebook icon"></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin100.png" alt="Linkedin icon"></a>
+      <a href="https://twitter.com/"><img src="images/twitter30x30.png" alt="Twitter icon"></a>
+    </figure>
+    </div>
+      <nav>
+        <button id="hambtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+    <div class="dateContainer"><span class="currentdate"></span></div>
+  </header>
+  <main>
+    <picture></picture>
+    <img class="beachPic" src="images/carlsbadpic1200x360.jpg" loading="lazy" alt="Picture of beach in Carlsbad, California">
+    <h1 class="aboutTitle">About us</h1>
+    <p>In 1996, David White, a 4th generation farmer realized the need to change the way 
+    he sold his produce. Over the last 10 years, he watched fellow farmers struggle to 
+    make a living, becoming frustrated, and finally pack up and leave the farm in 
+    search of a better way of life. Being concerned about our country’s ability to 
+    self-sustain, David held a local meeting and came up with a way for farmers to 
+    unite in their cause and to produce and distribute their foods in a way that would 
+    have a wider reach. David wanted a store where fruits that were locally grown would 
+    be sold. He wanted produce from local farmer who he knew would grow their fruits 
+    with care and free of pesticides and fertilizers. 1 year later David opened the doors 
+    to Bountiful Foods. 
+    Today Bountiful Foods not only supplies fruits and juice blends to local communities, 
+    but we have now reached international levels, selling and purchasing and locally grown 
+    fruits and specialty fruits  all over the globe.</p> 
+
+
+    
+    <h2 class="aboutTitle">History of Carlsbad, California</h2>
+
+   <p>Nicknamed, "The Village By the Sea", Carlsbad is a coastal resort city located in the 
+    North County region of San Diego County, California. The city is 87 miles long, and has a 
+    population of 114,746. It has a semi-arid Mediterranean climate and averages 263 sunny 
+    days per year. Winters are mild with periodic rain. 
+  
+    The earliest residents were the Luiseno Indians who settled along the coastal area. These Natives
+    were here at the time when the Spanish arrived in the 16th Century. 1882 Captain John Frazier 
+    dug a well near the coast in Carlsbad. He would then offered his water at the train station. The
+    train station became known as Frazier’s Station. The water started to become famously known for 
+    its mineral content and chemical makeup, which was similar to the waters at Karlsbad, where
+    Carlsbad was named after. Carlsbad is today a popular tourist destination, and has the most 
+    renowned spas in the world.</p>
+    <div class="mapContainer">
+      <picture class="mapItems">
+        <a href="https://www.google.com/maps/place/7660+El+Camino+Real,+Carlsbad,+CA+92009/@33.0873499,-117.2670605,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc0b5ff3015ef9:0xb3837e792824f6a0!8m2!3d33.0873499!4d-117.2670605"><img class="mapImg"src="images/bountifulFoodsMap.jpg" loading="lazy" alt="Map of Bountiful Foods store"></a>
+      </picture>
+      <div class="mapItems mapLocation">
+        <h2>Come Find us!</h2>
+        <a class="locationPara" href="https://www.google.com/maps/place/7660+El+Camino+Real,+Carlsbad,+CA+92009/@33.0873499,-117.2670605,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc0b5ff3015ef9:0xb3837e792824f6a0!8m2!3d33.0873499!4d-117.2670605"><p>We are located at: <br>7660 El Camino Real,
+          Carlsbad, CA 92009 <br>
+          (760) 632-7511</p></a>
+        
+        <p>Office hours are: <br>
+          Monday - Saturday <br>
+          6:00AM - 8:00PM <br>
+          Closed on Sundays and National holidays.
+        </p>
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer >
+    <div>
+      <figure class="footerContent">
+      <img src="images/logo75x75.jpg" alt="Bountiful Foods logo">
+      </figure>
+      <h2 class="footerContent">Bountiful <br> Foods</h2>
+      <p class="footerContent"> Located at:<br> 7660 El Camino Real, <br>Carlsbad, CA 92009<br> (760) 632-7511 </p>
+    </div>
+    <div>
+      <p class="footerContent2 references"><a href="references.html">Resources</a></p>
+      <p class="VisitDate">Days since last visited:  <span id="VisitedLast"></span></p>
+      <p class="footerContent2 aboutUs"><a href="aboutUs.html">About Us</a></p>
+      
+    </div>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <!-- <script src="scripts/weather.js"></script> -->
+    <script src="scripts/localstorage.js"></script>
+</body>
+</html>
