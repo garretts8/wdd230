@@ -1,5 +1,5 @@
 /////////To calculate days since last visit/////////////
-let visit = number(window.localStorage.getItem("latestVisit"));
+let visit = window.localStorage.getItem("latestVisit");
 let vis = document.getElementById("VisitedLast");
 let visits = 0;
 const today = Date.now();
