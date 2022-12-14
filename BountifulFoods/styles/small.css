@@ -180,12 +180,12 @@ footer div {
 
 .heroTitle {
   position: absolute;
-  top: 15%;
+  top: 10%;
   right: 40%;
   background-color: #ADD8CF;
   color: black;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1rem;
   filter: brightness(150%);
   padding: 5px;
   border-radius: 20px;
@@ -202,12 +202,13 @@ footer div {
   position: absolute;
   right: 4%;
   top: 60%;
-  padding: 5px;
-  width: 120px;
+  padding: 7px;
+  width: 110px;
   border-radius: 25px;
   box-shadow: 10px 10px 10px #000;
   background-color: #ADD8CF;
   font-weight: 600;
+  font-size: .7rem;
 }
 
 .fruitContainer {
