@@ -214,7 +214,7 @@ footer div {
 .fruitContainer {
   display: block;
   text-align: center;
-  margin: 2.5px 0px;
+  margin: 2.5px 0;
 }
 
 .fruitContent {
@@ -374,7 +374,7 @@ text-align: center;
 }
 
 fieldset {
-  margin: 2rem 0px ;
+  margin: 2rem 0 ;
   border: 1px solid #1C7377;
   border-radius: 10px;
   padding: 0.5rem 2%;
@@ -432,13 +432,12 @@ label.info input {
 }
 
 textarea {
-  -webkit-appearance: none;
   font-size: 1rem;
   border: solid 1px #999;
   border-radius: 4px;
   padding: 0.75rem;
   color: #555;
-  width: 22rem;
+  width: 24rem;
   background-color: rgba( 0,0,0,0.1);
 }
 
