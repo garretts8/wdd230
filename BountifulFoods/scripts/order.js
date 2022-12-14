@@ -132,8 +132,28 @@ function orderList(items) {
     totFats.innerHTML = `Total Fat: ${+fat1 + +fat2 + +fat3}g`;
     totSugar.innerHTML = `Total Sugar: ${+sugar1 + +sugar2 + +sugar3}g`;
     totCal.innerHTML = `Total Calories: ${+cal1 + +cal2 + +cal3} calories`;
+    
+    let visits = Number(window.localStorage.getItem("numOrders"));
+    let order = document.querySelector(".order");
+
   })
 }
+
+orderBtn.addEventListener('click', () => {
+
+  let numOrders = Number(window.localStorage.getItem("numOrders"));
+  let orderz = document.querySelector(".order");
+
+  if (numOrders == 0) {
+    numOrders = numOrders + 1;
+    localStorage.setItem("numOrders", numOrders)
+    orderz.innerHTML = numOrders;
+  } else if (numOrders > 0) {
+    numOrders = numOrders + 1;
+    localStorage.setItem("numOrders", numOrders)
+    orderz.innerHTML = numOrders;
+  };
+});
 
 apiFetch();
 
