@@ -185,7 +185,7 @@ footer div {
   background-color: #ADD8CF;
   color: black;
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1.5rem;
   filter: brightness(150%);
   padding: 10px;
   border-radius: 20px;
@@ -201,7 +201,7 @@ footer div {
 .herobtn {
   position: absolute;
   right: 4%;
-  top: 63%;
+  top: 60%;
   padding: 10px;
   width: 150px;
   border-radius: 25px;
