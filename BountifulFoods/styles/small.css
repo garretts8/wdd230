@@ -133,7 +133,6 @@ footer div {
   padding: 10px;
 }
 
-
 .references a:hover {
   background-color: #FFF7E1;
   color: #0d3233;
@@ -149,7 +148,6 @@ footer div {
   background-color: #FFF7E1;
   color: #0d3233;
 }
-
 
 #hambtn span:nth-child(1) {
   display: block;
@@ -172,8 +170,6 @@ footer div {
 .heroContainer {
   position: relative;
   padding-top: 5px;
-  
-  
 }
  
 .heroimg {
@@ -201,19 +197,6 @@ footer div {
 .heroaddress {
   display: none;
 }
-/* .heroaddress {
-  position: absolute;
-  top: 9%;
-  left: 5%;
-  background-color: #ADD8CF;
-  padding: 15px;
-  text-align: center;
-  color: #0d3233;
-  width: 15%;
-  box-shadow: 10px 10px 10px #000;
-  opacity: 0.9;
-  border-radius: 5px;
-} */
 
 .herobtn {
   position: absolute;
@@ -227,17 +210,6 @@ footer div {
   font-weight: 600;
 }
 
-/* .addTitle {
-  border-bottom: 1px solid #1C7377;
-  margin: 0px;
-  padding: 0px;
-} */
-
-/* .heroAddress{
-  border-bottom: none;
-  background: none;
-} */
-
 .fruitContainer {
   display: block;
   text-align: center;
@@ -248,22 +220,22 @@ footer div {
  padding: 5px;
  }
 
- .fruitpara {
+.fruitpara {
   padding: 5px;
- }
+}
 
- .strawberry {
-  display: none;
- }
- 
- .weather {
-  background-color: #ADD8CF;
-  padding: 5px;
- }
+.strawberry {
+display: none;
+}
 
- .townWeather {
-  text-align: center;
- }
+.weather {
+background-color: #ADD8CF;
+padding: 5px;
+}
+
+.townWeather {
+text-align: center;
+}
 
 .weatherContainer {
   display: flex;
@@ -271,6 +243,7 @@ footer div {
 
 .weatherContent {
   flex: 1 1 100%;
+  padding:10px;
 }
 
 .foreContainer {
@@ -288,10 +261,16 @@ footer div {
 }
 
 .weathertoday {
+  font-size: 1.3rem;
   padding: 3% 0px;
-  /* border: 2px solid white; */
   text-align: center;
-  
+}
+
+.currentTemp {
+  background: none;
+  border: none;
+  color: black;
+  padding: 5px;
 }
 
 .threeTitle {
@@ -319,7 +298,6 @@ footer div {
   width: 200px;
 }
 
-
 .drinkContainer {
   margin: 2.5px 0;
 }
@@ -332,9 +310,6 @@ footer div {
 .drinkImg {
   flex:1 1 auto;
   align-items: center;
-  /* padding: 5px;
-  margin-left: 5%; */
-  /* margin-right: auto; */
 }
 
 .drinkImg img {
@@ -353,12 +328,10 @@ footer div {
 
 .mapContainer{
   display: block;
-  /* margin: 5px 0; */
 }
 
 .mapContent {
   flex: 1 1 100%;
-  /* background-color: #ADD8CF; */
   padding-right: 20px;
 }
 
@@ -468,6 +441,10 @@ textarea {
   background-color: rgba( 0,0,0,0.1);
 }
 
+.order {
+display: none;
+}
+
 /*//////////About Us//////////*/
 
 .aboutTitle, .mapLocation {
@@ -494,7 +471,6 @@ margin-left:auto;
 margin-right: auto;
 width: 98%;
 padding: 5px;
-/* background-color: none; */
 }
 
 .locationPara {
@@ -508,6 +484,5 @@ padding: 5px;
 
 .mapLocation {
   margin-left: auto;
-  
 }
 

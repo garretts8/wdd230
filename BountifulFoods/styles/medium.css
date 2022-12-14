@@ -15,22 +15,6 @@
     display: none;
   }
 
-
-
-  /* .heroaddress {
-    position: absolute;
-    top: 9%;
-    left: 5%;
-    background-color: #ADD8CF;
-    padding: 15px;
-    text-align: center;
-    color: #0d3233;
-    width: 15%;
-    box-shadow: 10px 10px 10px #000;
-    opacity: 0.9;
-    border-radius: 5px;
-  } */
-
   .fruitContainer {
     display: flex;
   }
@@ -56,6 +40,7 @@
     margin-right: auto;
     width: 100%;
   }
+
   .mapContainer{
     display: flex;
     margin: 5px 0;
@@ -63,8 +48,6 @@
   
   .mapContent {
     flex: 1 1 100%;
-    /* background-color: #ADD8CF; */
-    
   }
 
   .mapImg {
@@ -74,8 +57,8 @@
     margin-right: auto;
     height: 100%;
     margin-bottom: 25px;
-    
   }
+
   .mapInfo {
     padding: 5px;
     margin-left: auto;
@@ -85,7 +68,6 @@
 
   .mapContainer {
     display: block;
-    
   }
 
 }

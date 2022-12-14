@@ -1,7 +1,6 @@
 @media only screen and (min-width: 57rem) {
   li a {
     padding: .5rem 1rem;
-
   }
   
   nav button {
@@ -74,6 +73,4 @@
     flex: 1 1 100%;
   }
 
-
-  
 }

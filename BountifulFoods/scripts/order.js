@@ -20,7 +20,7 @@ const mail = document.querySelector(".mail");
 const phone = document.querySelector(".phone");
 const ph = document.querySelector(".ph");
 const fruitsSelected = document.querySelector(".fruitsSelected");
-const textArea = document.querySelector(".textArea");
+const textArea = document.querySelector("#textArea");
 const special = document.querySelector(".special");
 
 
