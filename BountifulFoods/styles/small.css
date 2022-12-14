@@ -214,7 +214,7 @@ footer div {
 .fruitContainer {
   display: block;
   text-align: center;
-  margin: 2.5px 0;
+  margin: 2.5px 0px;
 }
 
 .fruitContent {
@@ -374,7 +374,7 @@ text-align: center;
 }
 
 fieldset {
-  margin: 2rem 0 ;
+  margin: 2rem 0px ;
   border: 1px solid #1C7377;
   border-radius: 10px;
   padding: 0.5rem 2%;
