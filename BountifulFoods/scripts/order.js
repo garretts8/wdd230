@@ -23,7 +23,6 @@ const fruitsSelected = document.querySelector(".fruitsSelected");
 const textArea = document.querySelector("#textArea");
 const special = document.querySelector(".special");
 
-
 const url = "https://brotherblazzard.github.io/canvas-content/fruit.json"
 
 async function apiFetch() {
@@ -43,28 +42,21 @@ async function apiFetch() {
 }
 
 function displayOrder(list) {
-  // let ordername = document.querySelector(".firstname");
   let options = document.createElement("option");
   let name = `${list.name}`;
 
   options.innerHTML = name;
   options.setAttribute("value", name);
-  // option1.setAttribute("value", carb);
-  // options.setAttribute("class", )
   select.appendChild(options);
-
 }
 
 addBtn.addEventListener('click', () => {
   if (order1.value == '') {
     order1.value = select.value;
-    // console.log(select.value);
   } else if (order2.value == '') {
     order2.value = select.value;
-    // console.log(select.value);
   } else if ( order3.value == '') {
     order3.value = select.value;
-    // console.log(select.value);
   }
 })
 
@@ -110,15 +102,7 @@ function orderList(items) {
       sugar3 = `${parseFloat(items.nutritions.sugar)}`;
     }
 
-    // console.log(+pro1 + +pro2 + +pro3);
-    // console.log(+carb1 + +carb2 + +carb3);
-    // console.log(+fat1 + +fat2 + +fat3);
-    // console.log(+sugar1 + +sugar2 + +sugar3);
-    // console.log(+sugar1 + +sugar2 + +sugar3); 
-    // console.log(+cal1 + +cal2 + +cal3);
-
     let today = new Date();
-    // console.log(today);
     let date = (today.getMonth()+1) + '-' + today.getDate() + '-' + today.getFullYear();
     let time = today.getHours() + ":" + (today.getMinutes() <= 10 ? "0" : "") + today.getMinutes();
     let ampm = today.getHours() >= 12 ? 'PM' : 'AM';
