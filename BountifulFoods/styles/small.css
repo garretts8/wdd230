@@ -137,7 +137,7 @@ footer div {
 }
 
 .footerContent {
-  flex: 1 1 100%;
+  margin: auto;
   padding: 5px;
   margin-bottom: 0px;
 }
@@ -145,6 +145,10 @@ footer div {
 .footerContent2 {
   flex: 1 1 100%;
   text-align: center;
+}
+
+.address {
+  margin-top: 50px;
 }
 
 .footerRes {
