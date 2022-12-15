@@ -1,4 +1,8 @@
 @media only screen and (min-width: 560px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
   li a {
     border-right: 1px solid #1C7377;
     }
@@ -34,7 +38,10 @@
     top: 60%;
     padding: 10px;
     width: 150px;
-    
+  }
+
+  .years {
+    margin-left: 18%;
   }
 
   .orange {

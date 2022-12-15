@@ -41,6 +41,8 @@ header .titlehead {
   color: white;  
   text-align: center;
   margin: auto;
+  font-size: 2rem;
+
 }
 
 .titlecontent {
@@ -117,18 +119,37 @@ footer {
   align-items: center;
 }
 
+.years {
+  display: inline;
+  margin: 20px;
+}
+
+.visitDate {
+  padding: 5px;
+}
+
 footer div {
   display: flex;
+}
+
+.footerTitle {
+  margin-right: 60px;
 }
 
 .footerContent {
   flex: 1 1 100%;
   padding: 5px;
+  margin-bottom: 0px;
 }
 
 .footerContent2 {
   flex: 1 1 100%;
   text-align: center;
+}
+
+.footerRes {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .references a {
@@ -151,6 +172,10 @@ footer div {
 .aboutUs a:hover {
   background-color: #FFF7E1;
   color: #0d3233;
+}
+
+.visitDate {
+  margin-right: 10%
 }
 
 #hambtn span:nth-child(1) {

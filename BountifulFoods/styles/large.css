@@ -16,6 +16,18 @@
     border-top: none;
   }
 
+  .footerTitle {
+    margin-right: 20%;
+  }
+
+  .years {
+    margin-left: 30%;
+  }
+
+  .visitDate {
+ 
+  }
+
   .greengrapes {
     display: flex;
   }

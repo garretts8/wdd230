@@ -10,3 +10,7 @@ console.log(now);
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 datefield.innerHTML = `<em>${fulldate}</em>`;
 // date.innerHTML = `<em>${fulldate}</em>`;
+
+let fyear = document.querySelector("#year");
+let year = now.getFullYear();
+fyear.innerHTML = year;
