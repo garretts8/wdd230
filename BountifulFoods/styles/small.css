@@ -232,6 +232,9 @@ display: none;
 .weather {
 background-color: #ADD8CF;
 padding: 5px;
+border-radius: 5px;
+box-shadow: 1px 1px 4px 1px #888;
+
 }
 
 .townWeather {
