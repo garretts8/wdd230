@@ -10,6 +10,10 @@ if (visit == null || visit == undefined) {
 		const dayLastVisit = today - visit;
 		const oneDay = 24 * 60 * 60 * 1000;
 		const days = Math.round(dayLastVisit / oneDay); 
-		vis.textContent = days;
+		// vis.textContent = days;
 		localStorage.setItem("latestVisit", today);
 };
+
+let numOrders = Number(window.localStorage.getItem("numOrders"));
+let orderz = document.querySelector(".order");
+orderz.innerHTML = numOrders;

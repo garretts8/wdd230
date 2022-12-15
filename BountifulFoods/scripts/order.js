@@ -58,13 +58,13 @@ function displayOrder(list) {
 addBtn.addEventListener('click', () => {
   if (order1.value == '') {
     order1.value = select.value;
-    console.log(select.value);
+    // console.log(select.value);
   } else if (order2.value == '') {
     order2.value = select.value;
-    console.log(select.value);
+    // console.log(select.value);
   } else if ( order3.value == '') {
     order3.value = select.value;
-    console.log(select.value);
+    // console.log(select.value);
   }
 })
 
@@ -83,6 +83,10 @@ let pro3 = 0.0;
 let fat3 = 0.0;
 let cal3 = 0.0;
 let sugar3 = 0.0;
+
+let numOrders = Number(window.localStorage.getItem("numOrders"));
+let orderz = document.querySelector(".order");
+orderz.innerHTML = numOrders;
 
 function orderList(items) {
   orderBtn.addEventListener('click', () => {
@@ -106,17 +110,17 @@ function orderList(items) {
       sugar3 = `${parseFloat(items.nutritions.sugar)}`;
     }
 
-    console.log(+pro1 + +pro2 + +pro3);
-    console.log(+carb1 + +carb2 + +carb3);
-    console.log(+fat1 + +fat2 + +fat3);
-    console.log(+sugar1 + +sugar2 + +sugar3);
-    console.log(+sugar1 + +sugar2 + +sugar3); 
-    console.log(+cal1 + +cal2 + +cal3);
+    // console.log(+pro1 + +pro2 + +pro3);
+    // console.log(+carb1 + +carb2 + +carb3);
+    // console.log(+fat1 + +fat2 + +fat3);
+    // console.log(+sugar1 + +sugar2 + +sugar3);
+    // console.log(+sugar1 + +sugar2 + +sugar3); 
+    // console.log(+cal1 + +cal2 + +cal3);
 
     let today = new Date();
-    console.log(today);
+    // console.log(today);
     let date = (today.getMonth()+1) + '-' + today.getDate() + '-' + today.getFullYear();
-    let time = today.getHours() + ":" + today.getMinutes();
+    let time = today.getHours() + ":" + (today.getMinutes() <= 10 ? "0" : "") + today.getMinutes();
     let ampm = today.getHours() >= 12 ? 'PM' : 'AM';
     let dateTime = date+' '+time+' '+ampm;
 
@@ -140,9 +144,6 @@ function orderList(items) {
 }
 
 orderBtn.addEventListener('click', () => {
-
-  let numOrders = Number(window.localStorage.getItem("numOrders"));
-  let orderz = document.querySelector(".order");
 
   if (numOrders == 0) {
     numOrders = numOrders + 1;
