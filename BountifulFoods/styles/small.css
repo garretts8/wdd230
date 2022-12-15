@@ -94,6 +94,10 @@ li a {
   background-color: #FFF7E1;
 }
 
+.active {
+  color: #b78314;
+}
+
 .dateContainer {
 background-color: #FFF7E1;
 text-align: center;
